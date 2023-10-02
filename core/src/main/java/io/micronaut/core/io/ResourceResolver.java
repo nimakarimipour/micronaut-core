@@ -26,6 +26,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Resolves resources from a set of {@link ResourceLoader} instances.
@@ -97,7 +98,7 @@ public class ResourceResolver {
      * @param basePath The path to load resources from
      * @return An optional resource loader
      */
-    public @NonNull Optional<ResourceLoader> getLoaderForBasePath(@NonNull String basePath) {
+    public @NonNull Optional<ResourceLoader> getLoaderForBasePath(@NonNull @RUntainted String basePath) {
         ArgumentUtils.requireNonNull("basePath", basePath);
         Optional<ResourceLoader> resourceLoader = getSupportingLoader(basePath);
         return resourceLoader.map(rl -> rl.forBase(basePath));
@@ -109,7 +110,7 @@ public class ResourceResolver {
      * @param path The path to the resource
      * @return An optional input stream
      */
-    public @NonNull Optional<InputStream> getResourceAsStream(@NonNull String path) {
+    public @NonNull Optional<InputStream> getResourceAsStream(@NonNull @RUntainted String path) {
         ArgumentUtils.requireNonNull("path", path);
         Optional<ResourceLoader> resourceLoader = getSupportingLoader(path);
         if (resourceLoader.isPresent()) {

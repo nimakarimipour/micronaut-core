@@ -1,0 +1,1113 @@
+warning: The following options were not recognized by any processor: '[micronaut.processing.omit.confprop.injectpoints, micronaut.processing.module, micronaut.processing.group]'
+LOG: Annotated Packages: [io.micronaut.core]
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadata.java:125: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default <T extends Annotation> List<AnnotationValue<T>> getAnnotationValuesByStereotype(@Nullable String stereotype) {
+                                                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadata.java:1659: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default AnnotationMetadata copyAnnotationMetadata() {
+                               ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValue.java:60: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [private, final]
+    private final Map<CharSequence, Object> defaultValues;
+                                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValue.java:64: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [private, final]
+    private final List<AnnotationValue<?>> stereotypes;
+                                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValue.java:206: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public, final]
+    public final RetentionPolicy getRetentionPolicy() {
+                                 ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValue.java:214: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [public]
+    public List<AnnotationValue<?>> getStereotypes() {
+                                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValue.java:224: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [public]
+    public Map<CharSequence, Object> getDefaultValues() {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValue.java:249: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public Map<String, String> getProperties(@NonNull String member) {
+                               ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValue.java:415: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public String[] stringValues(@NonNull String member) {
+                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValue.java:415: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public String[] stringValues(@NonNull String member) {
+                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValue.java:415: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public String[] stringValues(@NonNull String member) {
+                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValue.java:645: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public AnnotationClassValue<?>[] annotationClassValues(@NonNull String member) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValue.java:645: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationClassValue<?>[] annotationClassValues(@NonNull String member) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValue.java:645: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public AnnotationClassValue<?>[] annotationClassValues(@NonNull String member) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValue.java:1058: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public, final]
+    public final String getAnnotationName() {
+                        ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValue.java:1078: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public, final]
+    public final Set<CharSequence> getMemberNames() {
+                                   ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValue.java:1095: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public ConvertibleValues<Object> getConvertibleValues() {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValue.java:1156: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public, final]
+    public final <T> T getRequiredValue(Class<T> type) {
+                       ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValue.java:1170: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public, final]
+    public final <T> T  getRequiredValue(String member, Class<T> type) {
+                        ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValue.java:1185: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @SuppressWarnings(value = "java:S2259")
+    public <T extends Annotation> List<AnnotationValue<T>> getAnnotations(String member, Class<T> type) {
+                                                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValue.java:1185: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public <T extends Annotation> List<AnnotationValue<T>> getAnnotations(String member, Class<T> type) {
+                                                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValue.java:1262: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public <T extends Annotation> Optional<AnnotationValue<T>> getAnnotation(String member, Class<T> type) {
+                                                               ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValue.java:1296: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public <T extends Annotation> Optional<AnnotationValue<T>> getAnnotation(@NonNull String member) {
+                                                               ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValue.java:1611: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [private]
+    private Object getRawSingleValue(@NonNull String member, Function<Object, Object> valueMapper) {
+                   ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueResolver.java:106: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default Class<?>[] classValues() {
+                       ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/type/Argument.java:549: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [static]
+    static <T> Argument<List<T>> listOf(@NonNull Class<T> type) {
+                                 ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/type/Argument.java:562: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [static]
+    static <T> Argument<List<T>> listOf(@NonNull Argument<T> type) {
+                                 ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/type/Argument.java:575: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [static]
+    static <T> Argument<Set<T>> setOf(@NonNull Class<T> type) {
+                                ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/type/Argument.java:588: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [static]
+    static <T> Argument<Set<T>> setOf(@NonNull Argument<T> type) {
+                                ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/type/Argument.java:603: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [static]
+    static <K, V> Argument<Map<K, V>> mapOf(@NonNull Class<K> keyType, @NonNull Class<V> valueType) {
+                                      ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/type/Argument.java:618: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [static]
+    static <K, V> Argument<Map<K, V>> mapOf(@NonNull Argument<K> keyType, @NonNull Argument<V> valueType) {
+                                      ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/type/Argument.java:632: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [static]
+    static <T> Argument<Optional<T>> optionalOf(@NonNull Class<T> optionalValueClass) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/type/Argument.java:645: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [static]
+    static <T> Argument<Optional<T>> optionalOf(@NonNull Argument<T> optionalValueArgument) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataProvider.java:35: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default AnnotationMetadata getAnnotationMetadata() {
+                               ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:44: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [private]
+    private List<AnnotationValue<?>> stereotypes;
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:46: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [private]
+    private Map<CharSequence, Object> defaultValues;
+                                      ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:101: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValue<T> build() {
+                              ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:112: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> stereotype(AnnotationValue<?> annotation) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:131: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> replaceStereotype(@NonNull AnnotationValue<?> originalAnnotationValue,
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:152: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> removeStereotype(@NonNull AnnotationValue<?> annotationValueToRemove) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:172: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> stereotypes(@NonNull Collection<AnnotationValue<?>> newStereotypes) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:188: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> replaceStereotypes(@NonNull Collection<AnnotationValue<?>> newStereotypes) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:200: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> defaultValues(Map<? extends CharSequence, Object> defaultValues) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:219: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> value(int i) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:230: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> values(@Nullable int... ints) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:241: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> value(long i) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:252: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> values(@Nullable long... longs) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:263: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> value(@Nullable String str) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:274: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> values(@Nullable String... strings) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:285: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> value(boolean bool) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:297: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> value(char character) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:309: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> value(double number) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:321: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> value(float f) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:332: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> value(@Nullable Enum<?> enumObj) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:343: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> values(@Nullable Enum<?>... enumObjs) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:354: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> value(@Nullable Class<?> type) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:365: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> values(@Nullable Class<?>... types) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:376: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> values(@Nullable AnnotationClassValue<?>... types) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:387: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> value(@Nullable AnnotationValue<?> annotation) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:398: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> values(@Nullable AnnotationValue<?>... annotations) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:410: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, int i) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:424: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, byte b) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:438: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, char c) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:452: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, char... chars) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:466: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, double d) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:480: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, double... doubles) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:494: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, float f) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:508: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, float... floats) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:521: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, @Nullable int... ints) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:537: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, @Nullable byte... bytes) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:552: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, long i) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:565: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, short i) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:578: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, short... shorts) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:591: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, @Nullable long... longs) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:606: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, @Nullable String str) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:621: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, @Nullable String... strings) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:636: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, boolean bool) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:650: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, boolean... booleans) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:663: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, @Nullable Enum<?> enumObj) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:678: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, @Nullable Enum<?>... enumObjs) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:693: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, @Nullable Class<?> type) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:708: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, @Nullable Class<?>... types) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:728: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, @Nullable AnnotationValue<?> annotation) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:743: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, @Nullable AnnotationValue<?>... annotations) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:758: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> member(@NonNull String name, @Nullable AnnotationClassValue<?>... classValues) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationValueBuilder.java:774: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public AnnotationValueBuilder<T> members(@Nullable Map<CharSequence, Object> members) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/util/StringUtils.java:178: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [public, static]
+    public static Locale parseLocale(String localeValue) {
+                         ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/util/StringUtils.java:406: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [public, static]
+    public static String trimToNull(@Nullable String string) {
+                         ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/util/EnvironmentProperties.java:66: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public Map<String, List<String>> asMap() {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/util/CopyOnWriteMap.java:68: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Set<Entry<K, V>> entrySet() {
+                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/util/CopyOnWriteMap.java:68: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public Set<Entry<K, V>> entrySet() {
+                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/io/IOUtils.java:141: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [static]
+    static Path resolvePath(@NonNull URI uri,
+                ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/io/UrlReadable.java:53: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public InputStream asInputStream() throws IOException {
+                       ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/io/UrlReadable.java:53: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public InputStream asInputStream() throws IOException {
+                       ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/io/scan/DefaultClassPathResourceLoader.java:109: error: [assignment] incompatible types in assignment.
+        this.classLoader = classLoader;
+                           ^
+  found   : @RTainted ClassLoader
+  required: @RUntainted ClassLoader, index: 1
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/io/scan/DefaultClassPathResourceLoader.java:110: error: [assignment] incompatible types in assignment.
+        this.basePath = normalize(basePath);
+                                 ^
+  found   : @RTainted String
+  required: @RUntainted String, index: 2
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/io/FileReadable.java:49: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public InputStream asInputStream() throws IOException {
+                       ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/io/FileReadable.java:49: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public InputStream asInputStream() throws IOException {
+                       ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/io/service/ServiceScanner.java:112: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [private, static]
+    private static StaticServiceDefinitions findStaticServiceDefinitions() {
+                                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/io/service/ServiceLoaderInitialization.java:116: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [private]
+    private StaticServiceDefinitions buildStaticServiceDefinitions(BeforeAnalysisAccess access) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/io/service/DefaultServiceDefinition.java:36: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [private, final]
+    private final Class<S> loadedClass;
+                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/value/MapPropertyResolver.java:76: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Collection<String> getPropertyEntries(@NonNull String name) {
+                              ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/value/MapPropertyResolver.java:76: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public Collection<String> getPropertyEntries(@NonNull String name) {
+                              ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/optim/StaticOptimizations.java:77: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public, static]
+    public static <T> Optional<T> get(@NonNull Class<T> optimizationClass) {
+                                  ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:62: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public List<String> getAnnotationNamesByStereotype(@Nullable String stereotype) {
+                        ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:62: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public List<String> getAnnotationNamesByStereotype(@Nullable String stereotype) {
+                        ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:62: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public List<String> getAnnotationNamesByStereotype(@Nullable String stereotype) {
+                        ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:68: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Set<String> getAnnotationNames() {
+                       ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:68: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public Set<String> getAnnotationNames() {
+                       ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:68: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Set<String> getAnnotationNames() {
+                       ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:74: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Set<String> getDeclaredAnnotationNames() {
+                       ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:74: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public Set<String> getDeclaredAnnotationNames() {
+                       ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:74: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Set<String> getDeclaredAnnotationNames() {
+                       ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:80: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public List<String> getDeclaredAnnotationNamesByStereotype(@Nullable String stereotype) {
+                        ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:80: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public List<String> getDeclaredAnnotationNamesByStereotype(@Nullable String stereotype) {
+                        ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:80: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public List<String> getDeclaredAnnotationNamesByStereotype(@Nullable String stereotype) {
+                        ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:86: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public <T> OptionalValues<T> getValues(@NonNull String annotation, @NonNull Class<T> valueType) {
+                                 ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:86: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public <T> OptionalValues<T> getValues(@NonNull String annotation, @NonNull Class<T> valueType) {
+                                 ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:86: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public <T> OptionalValues<T> getValues(@NonNull String annotation, @NonNull Class<T> valueType) {
+                                 ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:98: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public <T extends Annotation> List<AnnotationValue<T>> getAnnotationValuesByType(@NonNull Class<T> annotationType) {
+                                                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:98: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public <T extends Annotation> List<AnnotationValue<T>> getAnnotationValuesByType(@NonNull Class<T> annotationType) {
+                                                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:98: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public <T extends Annotation> List<AnnotationValue<T>> getAnnotationValuesByType(@NonNull Class<T> annotationType) {
+                                                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:104: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public <T extends Annotation> List<AnnotationValue<T>> getDeclaredAnnotationValuesByType(@NonNull Class<T> annotationType) {
+                                                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:104: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public <T extends Annotation> List<AnnotationValue<T>> getDeclaredAnnotationValuesByType(@NonNull Class<T> annotationType) {
+                                                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:104: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public <T extends Annotation> List<AnnotationValue<T>> getDeclaredAnnotationValuesByType(@NonNull Class<T> annotationType) {
+                                                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:140: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Map<CharSequence, Object> getDefaultValues(@NonNull String annotation) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:140: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public Map<CharSequence, Object> getDefaultValues(@NonNull String annotation) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:140: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Map<CharSequence, Object> getDefaultValues(@NonNull String annotation) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:226: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public <T> OptionalValues<T> getValues(@NonNull Class<? extends Annotation> annotation, @NonNull Class<T> valueType) {
+                                 ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:226: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public <T> OptionalValues<T> getValues(@NonNull Class<? extends Annotation> annotation, @NonNull Class<T> valueType) {
+                                 ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:226: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public <T> OptionalValues<T> getValues(@NonNull Class<? extends Annotation> annotation, @NonNull Class<T> valueType) {
+                                 ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:233: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public List<String> getAnnotationNamesByStereotype(@NonNull Class<? extends Annotation> stereotype) {
+                        ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:233: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public List<String> getAnnotationNamesByStereotype(@NonNull Class<? extends Annotation> stereotype) {
+                        ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:233: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public List<String> getAnnotationNamesByStereotype(@NonNull Class<? extends Annotation> stereotype) {
+                        ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:239: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public List<Class<? extends Annotation>> getAnnotationTypesByStereotype(@NonNull Class<? extends Annotation> stereotype) {
+                                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:239: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public List<Class<? extends Annotation>> getAnnotationTypesByStereotype(@NonNull Class<? extends Annotation> stereotype) {
+                                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:239: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public List<Class<? extends Annotation>> getAnnotationTypesByStereotype(@NonNull Class<? extends Annotation> stereotype) {
+                                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:245: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public List<Class<? extends Annotation>> getAnnotationTypesByStereotype(@NonNull String stereotype) {
+                                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:245: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public List<Class<? extends Annotation>> getAnnotationTypesByStereotype(@NonNull String stereotype) {
+                                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:245: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public List<Class<? extends Annotation>> getAnnotationTypesByStereotype(@NonNull String stereotype) {
+                                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:301: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public <T> Class<T>[] classValues(@NonNull String annotation) {
+                          ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:301: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public <T> Class<T>[] classValues(@NonNull String annotation) {
+                          ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:301: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public <T> Class<T>[] classValues(@NonNull String annotation) {
+                          ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:307: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public <T> Class<T>[] classValues(@NonNull String annotation, @NonNull String member) {
+                          ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:307: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public <T> Class<T>[] classValues(@NonNull String annotation, @NonNull String member) {
+                          ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:307: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public <T> Class<T>[] classValues(@NonNull String annotation, @NonNull String member) {
+                          ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:313: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public <T> Class<T>[] classValues(@NonNull Class<? extends Annotation> annotation) {
+                          ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:313: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public <T> Class<T>[] classValues(@NonNull Class<? extends Annotation> annotation) {
+                          ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:313: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public <T> Class<T>[] classValues(@NonNull Class<? extends Annotation> annotation) {
+                          ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:319: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public <T> Class<T>[] classValues(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                          ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:319: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public <T> Class<T>[] classValues(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                          ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:319: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public <T> Class<T>[] classValues(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                          ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:370: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Optional<String> stringValue(@NonNull Class<? extends Annotation> annotation) {
+                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:370: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public Optional<String> stringValue(@NonNull Class<? extends Annotation> annotation) {
+                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:370: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Optional<String> stringValue(@NonNull Class<? extends Annotation> annotation) {
+                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:376: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Optional<String> stringValue(@NonNull String annotation) {
+                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:376: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public Optional<String> stringValue(@NonNull String annotation) {
+                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:376: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Optional<String> stringValue(@NonNull String annotation) {
+                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:392: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Optional<Boolean> booleanValue(@NonNull Class<? extends Annotation> annotation) {
+                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:392: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public Optional<Boolean> booleanValue(@NonNull Class<? extends Annotation> annotation) {
+                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:392: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Optional<Boolean> booleanValue(@NonNull Class<? extends Annotation> annotation) {
+                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:398: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Optional<Boolean> booleanValue(@NonNull String annotation) {
+                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:398: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public Optional<Boolean> booleanValue(@NonNull String annotation) {
+                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:398: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Optional<Boolean> booleanValue(@NonNull String annotation) {
+                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:404: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public String[] stringValues(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:404: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public String[] stringValues(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:404: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public String[] stringValues(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:410: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public String[] stringValues(@NonNull Class<? extends Annotation> annotation) {
+                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:410: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public String[] stringValues(@NonNull Class<? extends Annotation> annotation) {
+                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:410: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public String[] stringValues(@NonNull Class<? extends Annotation> annotation) {
+                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:416: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public String[] stringValues(@NonNull String annotation, @NonNull String member) {
+                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:416: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public String[] stringValues(@NonNull String annotation, @NonNull String member) {
+                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:416: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public String[] stringValues(@NonNull String annotation, @NonNull String member) {
+                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:422: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public String[] stringValues(@NonNull String annotation) {
+                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:422: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public String[] stringValues(@NonNull String annotation) {
+                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:422: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public String[] stringValues(@NonNull String annotation) {
+                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:428: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public OptionalDouble doubleValue(@NonNull String annotation, @NonNull String member) {
+                          ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:428: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public OptionalDouble doubleValue(@NonNull String annotation, @NonNull String member) {
+                          ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:428: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public OptionalDouble doubleValue(@NonNull String annotation, @NonNull String member) {
+                          ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:434: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public OptionalDouble doubleValue(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                          ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:434: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public OptionalDouble doubleValue(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                          ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:434: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public OptionalDouble doubleValue(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                          ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:440: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public OptionalDouble doubleValue(@NonNull Class<? extends Annotation> annotation) {
+                          ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:440: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public OptionalDouble doubleValue(@NonNull Class<? extends Annotation> annotation) {
+                          ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:440: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public OptionalDouble doubleValue(@NonNull Class<? extends Annotation> annotation) {
+                          ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:446: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public <T> Optional<T> getValue(@NonNull String annotation, @NonNull Class<T> requiredType) {
+                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:446: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public <T> Optional<T> getValue(@NonNull String annotation, @NonNull Class<T> requiredType) {
+                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:446: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public <T> Optional<T> getValue(@NonNull String annotation, @NonNull Class<T> requiredType) {
+                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:452: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Optional<Object> getValue(@NonNull String annotation, @NonNull String member) {
+                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:452: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public Optional<Object> getValue(@NonNull String annotation, @NonNull String member) {
+                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:452: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Optional<Object> getValue(@NonNull String annotation, @NonNull String member) {
+                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:458: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Optional<Object> getValue(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:458: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public Optional<Object> getValue(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:458: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Optional<Object> getValue(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:494: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Optional<Object> getValue(@NonNull String annotation) {
+                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:494: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public Optional<Object> getValue(@NonNull String annotation) {
+                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:494: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Optional<Object> getValue(@NonNull String annotation) {
+                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:500: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Optional<Object> getValue(@NonNull Class<? extends Annotation> annotation) {
+                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:500: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public Optional<Object> getValue(@NonNull Class<? extends Annotation> annotation) {
+                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:500: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Optional<Object> getValue(@NonNull Class<? extends Annotation> annotation) {
+                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:506: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public <T> Optional<T> getValue(@NonNull Class<? extends Annotation> annotation, @NonNull Class<T> requiredType) {
+                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:506: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public <T> Optional<T> getValue(@NonNull Class<? extends Annotation> annotation, @NonNull Class<T> requiredType) {
+                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:506: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public <T> Optional<T> getValue(@NonNull Class<? extends Annotation> annotation, @NonNull Class<T> requiredType) {
+                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:512: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public <T> Optional<T> getValue(@NonNull Class<? extends Annotation> annotation, @NonNull Argument<T> requiredType) {
+                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:512: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public <T> Optional<T> getValue(@NonNull Class<? extends Annotation> annotation, @NonNull Argument<T> requiredType) {
+                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:512: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public <T> Optional<T> getValue(@NonNull Class<? extends Annotation> annotation, @NonNull Argument<T> requiredType) {
+                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:518: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public <T> Optional<T> getValue(@NonNull String annotation, @NonNull Argument<T> requiredType) {
+                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/EmptyAnnotationMetadata.java:518: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public <T> Optional<T> getValue(@NonNull String annotation, @NonNull Argument<T> requiredType) {
+                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:60: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default AnnotationMetadata getDeclaredMetadata() {
+                               ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:60: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default AnnotationMetadata getDeclaredMetadata() {
+                               ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:60: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default AnnotationMetadata getDeclaredMetadata() {
+                               ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:156: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default Optional<Boolean> booleanValue(@NonNull Class<? extends Annotation> annotation) {
+                              ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:156: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default Optional<Boolean> booleanValue(@NonNull Class<? extends Annotation> annotation) {
+                              ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:156: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default Optional<Boolean> booleanValue(@NonNull Class<? extends Annotation> annotation) {
+                              ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:162: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default Optional<Boolean> booleanValue(@NonNull String annotation) {
+                              ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:162: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default Optional<Boolean> booleanValue(@NonNull String annotation) {
+                              ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:162: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default Optional<Boolean> booleanValue(@NonNull String annotation) {
+                              ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:168: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default String[] stringValues(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:168: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default String[] stringValues(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:168: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default String[] stringValues(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:174: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default String[] stringValues(@NonNull Class<? extends Annotation> annotation) {
+                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:174: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default String[] stringValues(@NonNull Class<? extends Annotation> annotation) {
+                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:174: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default String[] stringValues(@NonNull Class<? extends Annotation> annotation) {
+                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:180: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default String[] stringValues(@NonNull String annotation, @NonNull String member) {
+                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:180: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default String[] stringValues(@NonNull String annotation, @NonNull String member) {
+                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:180: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default String[] stringValues(@NonNull String annotation, @NonNull String member) {
+                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:186: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default String[] stringValues(@NonNull String annotation) {
+                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:186: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default String[] stringValues(@NonNull String annotation) {
+                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:186: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default String[] stringValues(@NonNull String annotation) {
+                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:192: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default OptionalInt intValue(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                        ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:192: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default OptionalInt intValue(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                        ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:192: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default OptionalInt intValue(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                        ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:198: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default OptionalInt intValue(@NonNull Class<? extends Annotation> annotation) {
+                        ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:198: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default OptionalInt intValue(@NonNull Class<? extends Annotation> annotation) {
+                        ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:198: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default OptionalInt intValue(@NonNull Class<? extends Annotation> annotation) {
+                        ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:204: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default Optional<String> stringValue(@NonNull String annotation, @NonNull String member) {
+                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:204: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default Optional<String> stringValue(@NonNull String annotation, @NonNull String member) {
+                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:204: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default Optional<String> stringValue(@NonNull String annotation, @NonNull String member) {
+                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:210: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default Optional<String> stringValue(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:210: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default Optional<String> stringValue(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:210: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default Optional<String> stringValue(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:216: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default Optional<String> stringValue(@NonNull Class<? extends Annotation> annotation) {
+                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:216: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default Optional<String> stringValue(@NonNull Class<? extends Annotation> annotation) {
+                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:216: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default Optional<String> stringValue(@NonNull Class<? extends Annotation> annotation) {
+                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:222: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default Optional<String> stringValue(@NonNull String annotation) {
+                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:222: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default Optional<String> stringValue(@NonNull String annotation) {
+                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:222: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default Optional<String> stringValue(@NonNull String annotation) {
+                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:228: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default OptionalDouble doubleValue(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:228: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default OptionalDouble doubleValue(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:228: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default OptionalDouble doubleValue(@NonNull Class<? extends Annotation> annotation, @NonNull String member) {
+                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:234: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default OptionalDouble doubleValue(@NonNull Class<? extends Annotation> annotation) {
+                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:234: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default OptionalDouble doubleValue(@NonNull Class<? extends Annotation> annotation) {
+                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:234: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default OptionalDouble doubleValue(@NonNull Class<? extends Annotation> annotation) {
+                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:240: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default Map<CharSequence, Object> getDefaultValues(@NonNull String annotation) {
+                                      ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:240: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default Map<CharSequence, Object> getDefaultValues(@NonNull String annotation) {
+                                      ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:240: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default Map<CharSequence, Object> getDefaultValues(@NonNull String annotation) {
+                                      ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:291: warning: [type.anno.before.decl.anno] write type annotations [@Nullable] immediately before type, after declaration annotation @Override
+    default <T extends Annotation> AnnotationValue<T> getAnnotation(@NonNull String annotation) {
+                                                      ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:291: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [default]
+    default <T extends Annotation> AnnotationValue<T> getAnnotation(@NonNull String annotation) {
+                                                      ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:291: warning: [type.anno.before.decl.anno] write type annotations [@Nullable] immediately before type, after declaration annotation @Override
+    default <T extends Annotation> AnnotationValue<T> getAnnotation(@NonNull String annotation) {
+                                                      ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:297: warning: [type.anno.before.decl.anno] write type annotations [@Nullable] immediately before type, after declaration annotation @Override
+    default <T extends Annotation> AnnotationValue<T> getAnnotation(@NonNull Class<T> annotationClass) {
+                                                      ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:297: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [default]
+    default <T extends Annotation> AnnotationValue<T> getAnnotation(@NonNull Class<T> annotationClass) {
+                                                      ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:297: warning: [type.anno.before.decl.anno] write type annotations [@Nullable] immediately before type, after declaration annotation @Override
+    default <T extends Annotation> AnnotationValue<T> getAnnotation(@NonNull Class<T> annotationClass) {
+                                                      ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:303: warning: [type.anno.before.decl.anno] write type annotations [@Nullable] immediately before type, after declaration annotation @Override
+    default <T extends Annotation> AnnotationValue<T> getDeclaredAnnotation(@NonNull String annotation) {
+                                                      ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:303: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [default]
+    default <T extends Annotation> AnnotationValue<T> getDeclaredAnnotation(@NonNull String annotation) {
+                                                      ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:303: warning: [type.anno.before.decl.anno] write type annotations [@Nullable] immediately before type, after declaration annotation @Override
+    default <T extends Annotation> AnnotationValue<T> getDeclaredAnnotation(@NonNull String annotation) {
+                                                      ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:619: warning: [type.anno.before.decl.anno] write type annotations [@Nullable] immediately before type, after declaration annotation @Override
+    default <T extends Annotation> T synthesize(@NonNull Class<T> annotationClass, @NonNull String sourceAnnotation) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:619: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [default]
+    default <T extends Annotation> T synthesize(@NonNull Class<T> annotationClass, @NonNull String sourceAnnotation) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:619: warning: [type.anno.before.decl.anno] write type annotations [@Nullable] immediately before type, after declaration annotation @Override
+    default <T extends Annotation> T synthesize(@NonNull Class<T> annotationClass, @NonNull String sourceAnnotation) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:625: warning: [type.anno.before.decl.anno] write type annotations [@Nullable] immediately before type, after declaration annotation @Override
+    default <T extends Annotation> T synthesizeDeclared(@NonNull Class<T> annotationClass, @NonNull String sourceAnnotation) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/AnnotationMetadataDelegate.java:625: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [default]
+    default <T extends Annotation> T synthesizeDeclared(@NonNull Class<T> annotationClass, @NonNull String sourceAnnotation) {
+                                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/ImmutableSortedStringsArrayMap.java:135: warning: [type.anno.before.decl.anno] write type annotations [@Nullable] immediately before type, after declaration annotation @Override
+    public V put(String key, V value) {
+             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/ImmutableSortedStringsArrayMap.java:135: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [public]
+    public V put(String key, V value) {
+             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/ImmutableSortedStringsArrayMap.java:135: warning: [type.anno.before.decl.anno] write type annotations [@Nullable] immediately before type, after declaration annotation @Override
+    public V put(String key, V value) {
+             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/ImmutableSortedStringsArrayMap.java:156: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Set<String> keySet() {
+                       ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/ImmutableSortedStringsArrayMap.java:156: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public Set<String> keySet() {
+                       ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/ImmutableSortedStringsArrayMap.java:156: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Set<String> keySet() {
+                       ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/ImmutableSortedStringsArrayMap.java:162: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Collection<V> values() {
+                         ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/ImmutableSortedStringsArrayMap.java:162: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public Collection<V> values() {
+                         ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/ImmutableSortedStringsArrayMap.java:162: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Collection<V> values() {
+                         ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/ImmutableSortedStringsArrayMap.java:214: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Set<Entry<String, V>> entrySet() {
+                                 ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/annotation/ImmutableSortedStringsArrayMap.java:214: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public Set<Entry<String, V>> entrySet() {
+                                 ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/type/GenericPlaceholder.java:34: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default String getVariableName() {
+                   ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/type/DefaultArgumentValue.java:85: warning: [type.anno.before.decl.anno] write type annotations [@Nullable] immediately before type, after declaration annotation @Override
+    public <T extends Annotation> T synthesize(@NonNull Class<T> annotationClass, @NonNull String sourceAnnotation) {
+                                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/type/DefaultArgumentValue.java:85: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [public]
+    public <T extends Annotation> T synthesize(@NonNull Class<T> annotationClass, @NonNull String sourceAnnotation) {
+                                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/type/DefaultArgumentValue.java:85: warning: [type.anno.before.decl.anno] write type annotations [@Nullable] immediately before type, after declaration annotation @Override
+    public <T extends Annotation> T synthesize(@NonNull Class<T> annotationClass, @NonNull String sourceAnnotation) {
+                                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/type/DefaultArgumentValue.java:91: warning: [type.anno.before.decl.anno] write type annotations [@Nullable] immediately before type, after declaration annotation @Override
+    public <T extends Annotation> T synthesizeDeclared(@NonNull Class<T> annotationClass, @NonNull String sourceAnnotation) {
+                                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/type/DefaultArgumentValue.java:91: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [public]
+    public <T extends Annotation> T synthesizeDeclared(@NonNull Class<T> annotationClass, @NonNull String sourceAnnotation) {
+                                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/version/VersionUtils.java:67: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [public, static]
+    public static String getMicronautVersion() {
+                         ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/execution/CompletableFutureExecutionFlowImpl.java:108: warning: [type.anno.before.decl.anno] write type annotations [@Nullable] immediately before type, after declaration annotation @Override
+    public ImperativeExecutionFlow<Object> tryComplete() {
+                                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/execution/CompletableFutureExecutionFlowImpl.java:108: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [public]
+    public ImperativeExecutionFlow<Object> tryComplete() {
+                                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/execution/CompletableFutureExecutionFlow.java:41: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [static]
+    static <K> ExecutionFlow<K> just(@NonNull CompletableFuture<K> value) {
+                                ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/execution/ExecutionFlow.java:49: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [static]
+    static <K> ExecutionFlow<K> just(@Nullable K value) {
+                                ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/execution/ExecutionFlow.java:61: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [static]
+    static <K> ExecutionFlow<K> error(@NonNull Throwable e) {
+                                ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/execution/ExecutionFlow.java:72: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [static]
+    static <T> ExecutionFlow<T> empty() {
+                                ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/execution/ExecutionFlow.java:85: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [static]
+    static <T> ExecutionFlow<T> async(@NonNull Executor executor, @NonNull Supplier<? extends ExecutionFlow<T>> supplier) {
+                                ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/execution/ExecutionFlow.java:172: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default CompletableFuture<T> toCompletableFuture() {
+                                 ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/execution/ImperativeExecutionFlow.java:54: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    default ImperativeExecutionFlow<T> tryComplete() {
+                                       ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/execution/ImperativeExecutionFlow.java:54: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default ImperativeExecutionFlow<T> tryComplete() {
+                                       ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/execution/DelayedExecutionFlowImpl.java:129: warning: [type.anno.before.decl.anno] write type annotations [@Nullable] immediately before type, after declaration annotation @Override
+    public ImperativeExecutionFlow<T> tryComplete() {
+                                      ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/execution/DelayedExecutionFlowImpl.java:165: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [final]
+        final Step atomicSetOutput(ExecutionFlow<Object> output) {
+                   ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/execution/DelayedExecutionFlowImpl.java:201: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [final]
+        final ExecutionFlow<Object> atomicSetNext(Step next) {
+                                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/execution/ImperativeExecutionFlowImpl.java:39: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [private]
+    private Object value;
+                   ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/execution/ImperativeExecutionFlowImpl.java:41: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [private]
+    private Throwable error;
+                      ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/execution/ImperativeExecutionFlowImpl.java:43: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [private]
+    private Map<String, Object> context;
+                                ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/execution/ImperativeExecutionFlowImpl.java:52: warning: [type.anno.before.decl.anno] write type annotations [@Nullable] immediately before type, after declaration annotation @Override
+    public Object getValue() {
+                  ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/execution/ImperativeExecutionFlowImpl.java:52: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [public]
+    public Object getValue() {
+                  ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/execution/ImperativeExecutionFlowImpl.java:58: warning: [type.anno.before.decl.anno] write type annotations [@Nullable] immediately before type, after declaration annotation @Override
+    public Throwable getError() {
+                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/execution/ImperativeExecutionFlowImpl.java:58: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [public]
+    public Throwable getError() {
+                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/propagation/MutablePropagatedContext.java:39: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [static]
+    static MutablePropagatedContext of(@NonNull PropagatedContext propagatedContext) {
+                                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/propagation/PropagatedContext.java:44: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [static]
+    static PropagatedContext empty() {
+                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/propagation/PropagatedContext.java:54: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [static]
+    static PropagatedContext getOrEmpty() {
+                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/propagation/PropagatedContext.java:64: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [static]
+    static PropagatedContext get() {
+                             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/propagation/PropagatedContext.java:74: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [static]
+    static Optional<PropagatedContext> find() {
+                                       ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/propagation/PropagatedContext.java:85: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [static]
+    static Runnable wrapCurrent(@NonNull Runnable runnable) {
+                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/propagation/PropagatedContext.java:97: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [static]
+    static <V> Callable<V> wrapCurrent(@NonNull Callable<V> callable) {
+                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/propagation/PropagatedContext.java:109: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [static]
+    static <V> Supplier<V> wrapCurrent(@NonNull Supplier<V> supplier) {
+                           ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/propagation/PropagatedContext.java:207: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default Runnable wrap(@NonNull Runnable runnable) {
+                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/propagation/PropagatedContext.java:224: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default <V> Callable<V> wrap(@NonNull Callable<V> callable) {
+                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/propagation/PropagatedContext.java:241: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default <V> Supplier<V> wrap(@NonNull Supplier<V> supplier) {
+                            ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/propagation/PropagatedContext.java:258: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default <V> V propagate(@NonNull Supplier<V> supplier) {
+                  ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/propagation/PropagatedContextImpl.java:101: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public, static]
+    public static PropagatedContextImpl getOrEmpty() {
+                                        ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/DefaultBeanIntrospector.java:60: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Collection<BeanIntrospection<Object>> findIntrospections(@NonNull Predicate<? super BeanIntrospectionReference<?>> filter) {
+                                                 ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/DefaultBeanIntrospector.java:60: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public Collection<BeanIntrospection<Object>> findIntrospections(@NonNull Predicate<? super BeanIntrospectionReference<?>> filter) {
+                                                 ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/DefaultBeanIntrospector.java:60: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Collection<BeanIntrospection<Object>> findIntrospections(@NonNull Predicate<? super BeanIntrospectionReference<?>> filter) {
+                                                 ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/DefaultBeanIntrospector.java:72: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Collection<Class<?>> findIntrospectedTypes(@NonNull Predicate<? super BeanIntrospectionReference<?>> filter) {
+                                ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/DefaultBeanIntrospector.java:72: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public Collection<Class<?>> findIntrospectedTypes(@NonNull Predicate<? super BeanIntrospectionReference<?>> filter) {
+                                ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/DefaultBeanIntrospector.java:72: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Collection<Class<?>> findIntrospectedTypes(@NonNull Predicate<? super BeanIntrospectionReference<?>> filter) {
+                                ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/DefaultBeanIntrospector.java:85: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @SuppressWarnings(value = "java:S1181")
+    public <T> Optional<BeanIntrospection<T>> findIntrospection(@NonNull Class<T> beanType) {
+                                              ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/DefaultBeanIntrospector.java:85: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public <T> Optional<BeanIntrospection<T>> findIntrospection(@NonNull Class<T> beanType) {
+                                              ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/BeanIntrospection.java:154: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default Collection<BeanMethod<T, Object>> getBeanMethods() {
+                                              ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/BeanInfo.java:40: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [default]
+    default Argument<T> getGenericBeanType() {
+                        ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/DefaultBeanWrapper.java:53: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public BeanIntrospection<T> getIntrospection() {
+                                ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/DefaultBeanWrapper.java:53: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public BeanIntrospection<T> getIntrospection() {
+                                ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/DefaultBeanWrapper.java:53: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public BeanIntrospection<T> getIntrospection() {
+                                ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/DefaultBeanWrapper.java:59: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public T getBean() {
+             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/DefaultBeanWrapper.java:59: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public T getBean() {
+             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/AbstractBeanMethod.java:69: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public BeanIntrospection<B> getDeclaringBean() {
+                                ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/AbstractBeanMethod.java:69: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public BeanIntrospection<B> getDeclaringBean() {
+                                ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/AbstractBeanMethod.java:69: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public BeanIntrospection<B> getDeclaringBean() {
+                                ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/AbstractBeanMethod.java:94: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+            public AnnotationMetadata getAnnotationMetadata() {
+                                      ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/AbstractBeanMethod.java:94: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+            public AnnotationMetadata getAnnotationMetadata() {
+                                      ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/AbstractBeanMethod.java:94: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+            public AnnotationMetadata getAnnotationMetadata() {
+                                      ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/AbstractBeanMethod.java:102: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public final AnnotationMetadata getAnnotationMetadata() {
+                                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/AbstractBeanMethod.java:102: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public, final]
+    public final AnnotationMetadata getAnnotationMetadata() {
+                                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/AbstractBeanMethod.java:102: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public final AnnotationMetadata getAnnotationMetadata() {
+                                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/AbstractBeanMethod.java:108: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public final String getName() {
+                        ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/AbstractBeanMethod.java:108: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public, final]
+    public final String getName() {
+                        ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/AbstractBeanIntrospectionReference.java:60: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public String getName() {
+                  ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/AbstractBeanIntrospectionReference.java:60: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public String getName() {
+                  ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/AbstractBeanProperty.java:84: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Class<P> getType() {
+                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/AbstractBeanProperty.java:84: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public]
+    public Class<P> getType() {
+                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/AbstractBeanProperty.java:84: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public Class<P> getType() {
+                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/AbstractBeanProperty.java:100: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public final BeanIntrospection<B> getDeclaringBean() {
+                                      ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/AbstractBeanProperty.java:100: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [public, final]
+    public final BeanIntrospection<B> getDeclaringBean() {
+                                      ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/AbstractBeanProperty.java:100: warning: [type.anno.before.decl.anno] write type annotations [@NonNull] immediately before type, after declaration annotation @Override
+    public final BeanIntrospection<B> getDeclaringBean() {
+                                      ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/AbstractBeanProperty.java:111: warning: [type.anno.before.decl.anno] write type annotations [@Nullable] immediately before type, after declaration annotation @Override
+    public final P get(@NonNull B bean) {
+                   ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/beans/AbstractBeanProperty.java:111: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [public, final]
+    public final P get(@NonNull B bean) {
+                   ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/bind/annotation/AbstractArgumentBinder.java:93: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [protected]
+    protected Object doResolve(ArgumentConversionContext<T> context,
+                     ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/convert/DefaultMutableConversionService.java:222: error: [methodref.return] Incompatible return type
+        Function primitiveArrayToWrapperArray = ArrayUtils::toWrapperArray;
+                                                ^
+  found   : @RTainted Object @RTainted []
+  required: R extends @RTainted Object
+  Consequence: method in @RTainted ArrayUtils
+    @RTainted Object @RTainted [] toWrapperArray(@RTainted Object p0)
+  is not a valid method reference for method in @RTainted Function<T extends @RTainted Object, R extends @RTainted Object>
+    R extends @RTainted Object apply(@RTainted Function<T extends @RTainted Object, R extends @RTainted Object> this, T extends @RTainted Object p0), index: 3
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/convert/MutableConversionService.java:37: warning: [type.anno.before.modifier] write type annotation @NonNull immediately before type, after modifiers [static]
+    static MutableConversionService create() {
+                                    ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/convert/value/ConvertibleValuesMap.java:71: warning: [type.anno.before.decl.anno] write type annotations [@Nullable] immediately before type, after declaration annotation @Override
+    public V getValue(CharSequence name) {
+             ^
+/Users/nima/Developer/micronaut-core/core/src/main/java/io/micronaut/core/convert/value/ConvertibleValuesMap.java:71: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [public]
+    public V getValue(CharSequence name) {
+             ^
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+3 errors
+360 warnings
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':core:compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --info option to get more log output.
+
+BUILD FAILED in 42s

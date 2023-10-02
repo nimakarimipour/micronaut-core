@@ -29,6 +29,7 @@ import java.net.URL;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Abstraction over {@link java.io.File} and {@link java.net.URL} based I/O.
@@ -93,7 +94,7 @@ public interface Readable extends Named {
      * @param file The file
      * @return The readable.
      */
-    static @NonNull Readable of(@NonNull File file) {
+    static @NonNull Readable of(@NonNull @RUntainted File file) {
         ArgumentUtils.requireNonNull("file", file);
         return new FileReadable(file);
     }
@@ -104,7 +105,7 @@ public interface Readable extends Named {
      * @param path The path
      * @return The readable.
      */
-    static @NonNull Readable of(@NonNull Path path) {
+    static @NonNull Readable of(@NonNull @RUntainted Path path) {
         ArgumentUtils.requireNonNull("path", path);
         return new FileReadable(path.toFile());
     }

@@ -67,7 +67,7 @@ checkerFramework {
     ]
 
     extraJavacArgs = [
-            '-Awarns',
+//            '-Awarns',
             '-AannotatedPackages=' + 'io.micronaut.core',
             '-AenableLibraryCheck=true',
             "-AenableSideEffect",
@@ -83,7 +83,7 @@ tasks.withType(JavaCompile) {
         options.errorprone.disableAllChecks = true
         options.errorprone.disableAllWarnings = true
         options.errorprone {
-            check("AnnotatorScanner", CheckSeverity.OFF)
+            check("AnnotatorScanner", CheckSeverity.ERROR)
             option("AnnotatorScanner:ConfigPath", scanner_config)
         }
     }

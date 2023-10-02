@@ -42,6 +42,8 @@ import java.util.Optional;
 import java.util.stream.Stream;
 
 import org.slf4j.helpers.NOPLogger;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RPolyTainted;
 
 /**
  * Loads resources from the classpath.
@@ -54,8 +56,8 @@ public class DefaultClassPathResourceLoader implements ClassPathResourceLoader {
 
     private final Logger log;
 
-    private final ClassLoader classLoader;
-    private final String basePath;
+    private final @RUntainted ClassLoader classLoader;
+    private final @RUntainted String basePath;
     private final URL baseURL;
     private final Map<String, Boolean> isDirectoryCache = new ConcurrentLinkedHashMap.Builder<String, Boolean>()
             .maximumWeightedCapacity(50).build();
@@ -118,18 +120,18 @@ public class DefaultClassPathResourceLoader implements ClassPathResourceLoader {
      * @return An optional resource
      */
     @Override
-    public Optional<InputStream> getResourceAsStream(String path) {
+    public Optional<InputStream> getResourceAsStream(@RUntainted String path) {
         if (missingPath) {
             return Optional.empty();
         } else if (isProhibitedRelativePath(path)) {
             return Optional.empty();
         }
 
-        URL url = classLoader.getResource(prefixPath(path));
+        @RUntainted URL url = classLoader.getResource(prefixPath(path));
         if (url != null) {
             if (startsWithBase(url)) {
                 try {
-                    URI uri = url.toURI();
+                    @RUntainted URI uri = url.toURI();
                     if (uri.getScheme().equals("jar")) {
                         synchronized (DefaultClassPathResourceLoader.class) {
                             FileSystem fileSystem = null;
@@ -162,7 +164,7 @@ public class DefaultClassPathResourceLoader implements ClassPathResourceLoader {
                             }
                         }
                     } else if (uri.getScheme().equals("file")) {
-                        Path pathObject = Paths.get(uri);
+                        @RUntainted Path pathObject = Paths.get(uri);
                         if (Files.isDirectory(pathObject)) {
                             return Optional.empty();
                         }
@@ -350,7 +352,7 @@ public class DefaultClassPathResourceLoader implements ClassPathResourceLoader {
     }
 
     @SuppressWarnings("MagicNumber")
-    private String prefixPath(String path) {
+    private @RPolyTainted String prefixPath(@RPolyTainted String path) {
         if (path.startsWith("classpath:")) {
             path = path.substring(10);
         }

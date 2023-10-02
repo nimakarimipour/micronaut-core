@@ -4,7 +4,7 @@ import shutil
 from pathlib import Path
 
 VERSION = '1.3.9-SNAPSHOT'
-OUT_DIR = '/var/micronaut-core/annotator-out'
+OUT_DIR = '/Users/nima/Developer/micronaut-core/annotator-out'
 ANNOTATOR_JAR = "{}/.m2/repository/edu/ucr/cs/riple/annotator/annotator-core/{}/annotator-core-{}.jar".format(str(Path.home()), VERSION, VERSION)
 REPO = subprocess.check_output(['git', 'rev-parse', '--show-toplevel']).strip().decode('utf-8')
 

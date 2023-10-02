@@ -22,6 +22,7 @@ import io.micronaut.core.annotation.NonNull;
 import java.io.*;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Implementation of {@link Readable} for files.
@@ -32,13 +33,13 @@ import java.nio.file.Files;
 @Internal
 class FileReadable implements Readable {
 
-    private final File file;
+    private final @RUntainted File file;
 
     /**
      * Default constructor.
      * @param file The file
      */
-    FileReadable(@NonNull File file) {
+    FileReadable(@NonNull @RUntainted File file) {
         ArgumentUtils.requireNonNull("file", file);
         this.file = file;
     }

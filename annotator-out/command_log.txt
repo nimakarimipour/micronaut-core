@@ -1,0 +1,82 @@
+2023-10-02T11:00:43.646084:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:02:39.843228:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:04:16.626082:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:04:54.253722:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:07:15.878780:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:08:39.182489:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:10:26.161853:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:11:59.935361:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:13:20.153259:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:14:36.059447:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:15:53.801371:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:17:19.152247:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:18:35.798361:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:19:51.232279:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:21:06.958873:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:22:33.048727:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:23:48.976753:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:25:02.899939:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:26:17.682931:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:27:31.166836:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:28:44.970583:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:30:01.143521:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:31:28.197189:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:32:42.327323:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:33:54.759515:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:35:08.598769:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:36:39.862496:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:37:53.505455:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:39:07.240756:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:40:21.986405:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:41:47.919638:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:43:01.655934:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:44:15.842762:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:45:28.933081:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:46:50.158687:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:48:04.754415:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:49:19.429631:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:50:44.007881:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:51:59.074907:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:53:07.785137:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
+2023-10-02T11:54:50.951176:cd /Users/nima/Developer/micronaut-core && ./gradlew compileJava --rerun-tasks
+
