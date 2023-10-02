@@ -3,6 +3,8 @@ import io.micronaut.build.internal.japicmp.RemovedPackages
 
 plugins {
     id "io.micronaut.build.internal.convention-core-library"
+    id 'org.checkerframework' version '0.6.33'
+    id 'net.ltgt.errorprone' version "3.1.0"
 }
 
 micronautBuild {
@@ -15,6 +17,13 @@ dependencies {
     compileOnly libs.managed.jakarta.annotation.api
     compileOnly libs.graal
     compileOnly libs.managed.kotlin.stdlib
+    // UCR Tainting checker
+    annotationProcessor "edu.ucr.cs.riple.taint:ucrtainting-checker:0.1"
+    compileOnly "edu.ucr.cs.riple.taint:ucrtainting-checker-qual:0.1"
+    // Annotator Scanner Checker
+    annotationProcessor "edu.ucr.cs.riple.annotator:annotator-scanner:1.3.9-SNAPSHOT"
+    errorprone "com.google.errorprone:error_prone_core:2.4.0"
+    errorproneJavac "com.google.errorprone:javac:9+181-r4173-1"
 }
 
 spotless {
@@ -30,6 +39,11 @@ spotless {
     }
 }
 
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
 def versionInfo = tasks.register("micronautVersionInfo", WriteProperties) {
     outputFile = "${buildDir}/resources/version/micronaut-version.properties"
     property 'micronaut.version', projectVersion
@@ -42,4 +56,37 @@ tasks.withType(JapicmpTask).configureEach {
    richReport {
        addViolationTransformer(RemovedPackages, [prefixes: ['io.micronaut.caffeine'], exact: []])
    }
+}
+
+// Annotator scripts
+def scanner_config = project.rootDir.toString() + "/annotator-out/scanner.xml"
+def checker_config = project.rootDir.toString() + "/annotator-out/checker.xml"
+checkerFramework {
+    checkers = [
+            'edu.ucr.cs.riple.taint.ucrtainting.UCRTaintingChecker',
+    ]
+
+    extraJavacArgs = [
+            '-Awarns',
+            '-AannotatedPackages=' + 'io.micronaut.core',
+            '-AenableLibraryCheck=true',
+            "-AenableSideEffect",
+            "-AenableSerialization",
+            "-AserializationConfigPath=" + checker_config,
+    ]
+}
+
+import net.ltgt.gradle.errorprone.CheckSeverity
+tasks.withType(JavaCompile) {
+    // remove the if condition if you want to run NullAway on test code
+    if (!name.toLowerCase().contains("test")) {
+        options.errorprone.disableAllChecks = true
+        options.errorprone.disableAllWarnings = true
+        options.errorprone {
+            check("AnnotatorScanner", CheckSeverity.OFF)
+            option("AnnotatorScanner:ConfigPath", scanner_config)
+        }
+    }
+    options.compilerArgs << "-Xmaxerrs" << "100000"
+    options.compilerArgs << "-Xmaxwarns" << "100000"
 }

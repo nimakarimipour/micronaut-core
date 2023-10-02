@@ -1,0 +1,1 @@
+{"REPORTS":[{"CLASS":"org.example.Main","INDEX":[0],"METHOD":"poly(java.lang.Object)","LOCAL EFFECT":-1,"KIND":"POLY_METHOD","TREE":[],"FINISHED":true,"OVERALL EFFECT":-1,"Upper Bound EFFECT":0,"Lower Bound EFFECT":0,"PATH":"/Users/nima/Desktop/docker/benchmarks/untitled/src/main/java/org/example/Main.java"}]}
