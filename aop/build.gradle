@@ -1,6 +1,7 @@
 plugins {
     id "io.micronaut.build.internal.convention-core-library"
     id "org.jetbrains.kotlin.jvm"
+    id "org.checkerframework" version "0.6.37"
 }
 
 micronautBuild {
@@ -15,9 +16,33 @@ dependencies {
     compileOnly project(':core-reactive')
     compileOnly libs.managed.kotlinx.coroutines.core
     compileOnly libs.managed.reactor
+
+    // UCR Tainting checker
+    checkerFramework "edu.ucr.cs.riple.taint:ucrtainting-checker:$System.env.UCRT_VERSION"
+    compileOnly "edu.ucr.cs.riple.taint:ucrtainting-checker-qual:$System.env.UCRT_VERSION"
 }
 
 tasks.named("compileKotlin") {
     kotlinOptions.jvmTarget = "17"
     kotlinOptions.languageVersion = "1.7"
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+def checkerConfig = project.rootDir.absolutePath + "/annotator-out/" + project.name + "/checker.xml"
+checkerFramework {
+    checkers =["edu.ucr.cs.riple.taint.ucrtainting.UCRTaintingChecker"]
+    extraJavacArgs = [
+            "-Awarns",
+            "-AsuppressWarnings=type.anno.before.modifier,type.anno.before.decl.anno",
+            "-AannotatedPackages=io.micronaut.core",
+            "-AenableLibraryCheck=$System.env.ANNOTATOR_LIBRARY",
+            "-AenablePolyTaintInference=$System.env.ANNOTATOR_POLY",
+            "-AenableTypeArgumentInference=$System.env.ANNOTATOR_TYPE_ARG",
+            "-AenableSerialization",
+            "-AserializationConfigPath=$checkerConfig"
+    ]
 }

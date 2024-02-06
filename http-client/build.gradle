@@ -2,6 +2,7 @@ import org.apache.tools.ant.taskdefs.condition.Os
 
 plugins {
     id "io.micronaut.build.internal.convention-library"
+    id "org.checkerframework" version "0.6.37"
 }
 
 micronautBuild {
@@ -54,6 +55,10 @@ dependencies {
             classifier = Os.isArch("aarch64") ? "osx-aarch_64" : "osx-x86_64"
         }
     }
+
+    // UCR Tainting checker
+    checkerFramework "edu.ucr.cs.riple.taint:ucrtainting-checker:$System.env.UCRT_VERSION"
+    compileOnly "edu.ucr.cs.riple.taint:ucrtainting-checker-qual:$System.env.UCRT_VERSION"
 }
 
 //tasks.withType(Test).configureEach {
@@ -70,3 +75,24 @@ dependencies {
 //        System.out.flush()
 //    }
 //}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+def checkerConfig = project.rootDir.absolutePath + "/annotator-out/" + project.name + "/checker.xml"
+checkerFramework {
+    checkers =["edu.ucr.cs.riple.taint.ucrtainting.UCRTaintingChecker"]
+    extraJavacArgs = [
+            "-Awarns",
+            "-AsuppressWarnings=type.anno.before.modifier,type.anno.before.decl.anno",
+            "-AannotatedPackages=io.micronaut.core",
+            "-AenableLibraryCheck=$System.env.ANNOTATOR_LIBRARY",
+            "-AenablePolyTaintInference=$System.env.ANNOTATOR_POLY",
+            "-AenableTypeArgumentInference=$System.env.ANNOTATOR_TYPE_ARG",
+            "-AenableSerialization",
+            "-AserializationConfigPath=$checkerConfig"
+    ]
+}
+
