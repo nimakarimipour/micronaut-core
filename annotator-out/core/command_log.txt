@@ -1,0 +1,190 @@
+2024-02-05T20:24:06.699763:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:24:11.060251:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:24:12.228379:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:24:34.634551:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:24:38.812460:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:24:39.957695:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:24:47.260458:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:24:51.379179:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:24:52.582973:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:25:03.800349:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:25:48.567555:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:26:27.404670:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:27:05.544065:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:27:42.821027:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:28:21.095679:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:28:59.768820:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:29:39.155679:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:30:22.568551:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:31:27.648875:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:32:17.841532:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:32:55.371477:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:33:32.144734:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:34:10.475342:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:34:47.872656:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:35:24.485320:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:36:01.548111:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:36:38.719089:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:37:22.636577:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:38:01.736672:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:38:39.745716:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:39:17.897125:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:39:55.361287:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:40:32.724998:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:41:09.646048:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:41:47.333548:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:42:23.158464:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:42:59.295919:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:43:36.180909:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:44:12.547158:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:44:49.028945:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:45:26.011647:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:46:01.367361:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:46:47.870309:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:47:29.919935:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:48:07.246011:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:48:44.285445:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:49:21.216830:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:49:58.472566:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:50:35.266456:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:51:13.638994:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:51:51.971354:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:52:40.921095:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:53:46.130711:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:54:51.935437:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:55:55.053009:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:56:47.333657:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:57:26.075606:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:58:03.887573:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:58:41.825539:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:59:19.768919:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T20:59:57.000273:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:00:34.832533:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:01:12.634149:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:02:00.765796:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:03:04.613846:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:04:07.121466:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:05:07.956221:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:06:07.274139:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:06:47.219884:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:07:25.125016:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:08:03.423355:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:08:41.411838:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:09:19.814396:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:09:58.486810:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:10:36.482369:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:11:21.388322:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:12:13.257026:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:12:52.409351:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:13:30.095436:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:14:09.784793:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:14:48.525875:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:15:27.800503:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:16:06.495863:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:16:46.288646:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:17:25.834868:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:18:06.365159:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:18:46.735392:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:19:27.083605:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:20:07.431677:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:20:47.424821:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:21:26.996196:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:22:06.132156:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:22:45.290303:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:23:28.049676:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
+2024-02-05T21:24:13.611377:cd /Users/nima/Developer/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew core:compileJava --rerun-tasks
+
