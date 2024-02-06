@@ -15,6 +15,7 @@
  */
 package io.micronaut.core.version;
 
+//import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 import io.micronaut.core.annotation.Nullable;
 
 import java.io.IOException;
@@ -71,4 +72,11 @@ public class VersionUtils {
         }
         return null;
     }
+
+    Object field;
+
+//    @RUntainted
+//    public Object test() {
+//        return field;
+//    }
 }

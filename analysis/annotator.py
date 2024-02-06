@@ -1,40 +1,73 @@
-import subprocess
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 import os
-import shutil
+import subprocess
 from pathlib import Path
 
-VERSION = '1.3.9-SNAPSHOT'
-OUT_DIR = '/Users/nima/Developer/micronaut-core/annotator-out'
-ANNOTATOR_JAR = "{}/.m2/repository/edu/ucr/cs/riple/annotator/annotator-core/{}/annotator-core-{}.jar".format(str(Path.home()), VERSION, VERSION)
+SCANNER = """<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scanner>
+    <serialization active="true" />
+    <uuid>f8c961f9-496b-45bd-b177-a86b1f60a226</uuid>
+    <path>{}/annotator-out/{}/0</path>
+    <processor>
+        <LOMBOK active="true" />
+    </processor>
+    <annotations />
+</scanner>
+"""
+CHECKER = """<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<serialization>
+    <path>{}/annotator-out/{}/0</path>
+</serialization>
+"""
+
+VERSION = '1.3.9-TAINT-SNAPSHOT'
+MODULES = ['aop', 'context', 'core', 'core-processor', 'core-reactive', 'http', 'http-client', 'http-client-core',
+           'http-netty', 'http-server-netty', 'inject', 'jackson-core', 'jackson-databind', 'json-core']
 REPO = subprocess.check_output(['git', 'rev-parse', '--show-toplevel']).strip().decode('utf-8')
+ANNOTATOR_JAR = "{}/.m2/repository/edu/ucr/cs/riple/annotator/annotator-core/{}/annotator-core-{}.jar".format(
+    str(Path.home()), VERSION, VERSION)
+
+def prepare(dir, module):
+    os.makedirs(dir, exist_ok=True)
+    with open('{}/paths.tsv'.format(dir), 'w') as o:
+        o.write("{}\t{}\n".format('{}/checker.xml'.format(dir), '{}/scanner.xml'.format(dir)))
+    with open('{}/scanner.xml'.format(dir), 'w') as o:
+        o.write(SCANNER.format(REPO, module))
+    with open('{}/checker.xml'.format(dir), 'w') as o:
+        o.write(CHECKER.format(REPO, module))
 
 
-def prepare():
-    os.makedirs(OUT_DIR, exist_ok=True)
-    shutil.rmtree('{}/0'.format(OUT_DIR), ignore_errors=True)
-    with open('{}/paths.tsv'.format(OUT_DIR), 'w') as o:
-        o.write("{}\t{}\n".format('{}/checker.xml'.format(OUT_DIR), '{}/scanner.xml'.format(OUT_DIR)))
-
-
-def run_annotator():
-    prepare()
+def run_annotator(module):
+    if module not in MODULES:
+        raise Exception("Invalid module: {}".format(module))
+    out_dir = '{}/annotator-out/{}'.format(REPO, module)
+    prepare(out_dir, module)
     commands = []
     commands += ["java", "-jar", ANNOTATOR_JAR]
-    commands += ['-d', OUT_DIR]
-    commands += ['-bc', 'cd {} && ./gradlew compileJava --rerun-tasks'.format(REPO)]
-    commands += ['-cp', '{}/paths.tsv'.format(OUT_DIR)]
+    commands += ['-d', out_dir]
+    commands += ['-bc', 'cd {} && ./gradlew {}:compileJava --rerun-tasks'.format(REPO, module)]
+    commands += ['-cp', '{}/paths.tsv'.format(out_dir)]
     commands += ['-i', 'edu.ucr.Initializer']
     commands += ['-n', 'edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted']
     commands += ['-cn', 'UCRTaint']
-    commands += ["--depth", "5"]
+    commands += ["--depth", "10"]
     # Uncomment to see build output
     # commands += ['-rboserr']
+    # Comment to inject root at a time
+    commands += ['-ch']
+    # Uncomment to disable cache
+    commands += ['-dc']
     # Uncomment to disable outer loop
     # commands += ['-dol']
     # Uncomment to disable parallel processing
     # commands += ['--disable-parallel-processing']
+    # subprocess.call(commands)
 
-    subprocess.call(commands)
 
-
-run_annotator()
+TO_RUN = ['core']
+## Uncomment to run all modules
+# TO_RUN = MODULES
+for module in TO_RUN:
+    run_annotator(module)

@@ -3,9 +3,12 @@ plugins {
     id "io.micronaut.build.internal.dependency-updates"
     id "io.micronaut.build.internal.version-catalog-updates"
     id "io.micronaut.build.internal.convention-quality"
+    id 'net.ltgt.errorprone' version "3.1.0" apply false
+//    id("org.checkerframework") version "0.6.37"
 }
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
@@ -22,19 +25,71 @@ tasks.named("updateVersionCatalogs") {
 if (System.getenv("SONAR_TOKEN") != null) {
     // deprecated and compile time only classes excluded from coverage
     def coverageExcludes = [
-        "**/StreamSoftServiceLoader.java",
-        "**/ServiceDescriptionProcessor.java",
-        "**/GraalReflectionConfigurer.java",
-        "**/graal/ServiceLoaderInitialization.java",
-        "**/graal/ServiceLoaderInitialization.java",
-        "**/DirectoryClassWriterOutputVisitor.java",
-        "**/GroovyClassWriterOutputVisitor.java",
-        "**/tck/**",
-        "**/test/support/**"
+            "**/StreamSoftServiceLoader.java",
+            "**/ServiceDescriptionProcessor.java",
+            "**/GraalReflectionConfigurer.java",
+            "**/graal/ServiceLoaderInitialization.java",
+            "**/graal/ServiceLoaderInitialization.java",
+            "**/DirectoryClassWriterOutputVisitor.java",
+            "**/GroovyClassWriterOutputVisitor.java",
+            "**/tck/**",
+            "**/test/support/**"
     ]
     sonarqube {
         properties {
             property "sonar.exclusions", coverageExcludes.join(",")
         }
     }
+}
+
+def MODULES = ['aop', 'context', 'core', 'core-processor', 'core-reactive', 'http', 'http-client', 'http-client-core',
+               'http-netty', 'http-server-netty', 'inject', 'jackson-core', 'jackson-databind', 'json-core']
+import net.ltgt.gradle.errorprone.CheckSeverity
+allprojects {
+    if (!MODULES.contains(project.name)){
+        return
+    }
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+    // get current dir
+    def projectDir = project.rootDir.absolutePath + "/annotator-out/" + project.name
+    plugins.apply('net.ltgt.errorprone')
+
+    dependencies {
+        // UCR Tainting checker
+        annotationProcessor "edu.ucr.cs.riple.annotator:annotator-scanner:1.3.9-TAINT-SNAPSHOT"
+//        // Annotator Scanner Checker
+        errorprone "com.google.errorprone:error_prone_core:2.4.0"
+        errorproneJavac "com.google.errorprone:javac:9+181-r4173-1"
+    }
+
+//    checkerFramework {
+//        checkers = ["edu.ucr.cs.riple.taint.ucrtainting.UCRTaintingChecker"]
+//        // to use the original tainting checker, uncomment the following line and comment the above line.
+//        // checkers.add("org.checkerframework.checker.tainting.TaintingChecker")
+//        extraJavacArgs = [
+//                "-nowarn",
+//                "-AannotatedPackages=io.micronaut",
+//                "-AenableLibraryCheck=true",
+////                "-AenableSerialization",
+////                "-AserializationConfigPath=$checker_config"
+//        ]
+//    }
+
+    tasks.withType(JavaCompile) {
+        // remove the if condition if you want to run NullAway on test code
+        if (!name.toLowerCase().contains("test")) {
+            options.errorprone.disableAllChecks = true
+            options.errorprone.disableAllWarnings = true
+            options.errorprone {
+                check("AnnotatorScanner", CheckSeverity.ERROR)
+                option("AnnotatorScanner:ConfigPath", projectDir + "/scanner.xml")
+            }
+        }
+        options.compilerArgs << "-Xmaxerrs" << "100000"
+        options.compilerArgs << "-Xmaxwarns" << "100000"
+    }
+
 }
