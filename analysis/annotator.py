@@ -29,7 +29,7 @@ MODULES = ['aop', 'context', 'core', 'core-processor', 'http-client', 'http-clie
 REPO = subprocess.check_output(['git', 'rev-parse', '--show-toplevel']).strip().decode('utf-8')
 ANNOTATOR_JAR = "{}/.m2/repository/edu/ucr/cs/riple/annotator/annotator-core/{}/annotator-core-{}.jar".format(
     str(Path.home()), VERSION, VERSION)
-
+UCRT_VERSION = '0.1-alpha-2'
 
 def prepare(dir, module):
     os.makedirs(dir, exist_ok=True)
@@ -49,7 +49,7 @@ def run_annotator(module):
     commands = []
     commands += ["java", "-jar", ANNOTATOR_JAR]
     commands += ['-d', out_dir]
-    commands += ['-bc', 'cd {} && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-2 ./gradlew {}:compileJava --rerun-tasks'.format(REPO, module)]
+    commands += ['-bc', 'cd {} && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION={} ./gradlew {}:compileJava --rerun-tasks'.format(REPO, UCRT_VERSION, module)]
     commands += ['-cp', '{}/paths.tsv'.format(out_dir)]
     commands += ['-i', 'edu.ucr.Initializer']
     commands += ['-n', 'edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted']
