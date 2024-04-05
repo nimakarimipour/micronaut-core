@@ -69,7 +69,8 @@ def run_annotator(module):
     subprocess.call(commands)
 
 
-TO_RUN = ['core']
+TO_RUN = ['aop', 'context', 'core', 'core-processor', 'core-reactive', 
+          'http', 'http-client', 'http-client-core', 'http-netty', 'http-server-netty', 'inject', 'jackson-core', 'jackson-databind', 'json-core']
 ## Uncomment to run all modules
 # TO_RUN = MODULES
 for module in TO_RUN:

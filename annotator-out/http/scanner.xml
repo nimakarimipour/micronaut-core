@@ -2,7 +2,7 @@
 <scanner>
     <serialization active="true" />
     <uuid>f8c961f9-496b-45bd-b177-a86b1f60a226</uuid>
-    <path>/Users/nima/Developer/micronaut-core/annotator-out/http/0</path>
+    <path>/home/nima/Developer/taint-benchmarks/micronaut-core/annotator-out/http/0</path>
     <processor>
         <LOMBOK active="true" />
     </processor>

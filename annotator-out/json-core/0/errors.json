@@ -1,1 +1,1 @@
-{"path":"/Users/nima/Developer/micronaut-core/json-core/src/main/java/io/micronaut/json/codec/JsonMediaTypeCodec.java","messageKey":"assignment","offset":1538,"index":1,"region":{"symbol":"JSON_ADDITIONAL_TYPES","class":"io.micronaut.json.codec.JsonMediaTypeCodec"},"fixes":[]},
+{"path":"/home/nima/Developer/taint-benchmarks/micronaut-core/json-core/src/main/java/io/micronaut/json/codec/JsonMediaTypeCodec.java","messageKey":"assignment","offset":1538,"index":1,"region":{"symbol":"JSON_ADDITIONAL_TYPES","class":"io.micronaut.json.codec.JsonMediaTypeCodec"},"fixes":[]},
