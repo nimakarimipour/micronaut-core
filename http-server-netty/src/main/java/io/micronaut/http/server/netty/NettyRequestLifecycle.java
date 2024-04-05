@@ -40,12 +40,13 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.Paths;
 import java.util.Optional;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 @Internal
 final class NettyRequestLifecycle extends RequestLifecycle {
     private static final Logger LOG = LoggerFactory.getLogger(NettyRequestLifecycle.class);
 
-    private final RoutingInBoundHandler rib;
+    private final @RUntainted RoutingInBoundHandler rib;
     private final PipeliningServerHandler.OutboundAccess outboundAccess;
 
     /**
@@ -54,7 +55,7 @@ final class NettyRequestLifecycle extends RequestLifecycle {
      */
     private final NettyHttpRequest<?> nettyRequest;
 
-    NettyRequestLifecycle(RoutingInBoundHandler rib, PipeliningServerHandler.OutboundAccess outboundAccess, NettyHttpRequest<?> request) {
+    NettyRequestLifecycle(@RUntainted RoutingInBoundHandler rib, PipeliningServerHandler.OutboundAccess outboundAccess, NettyHttpRequest<?> request) {
         super(rib.routeExecutor, request);
         this.rib = rib;
         this.outboundAccess = outboundAccess;
@@ -93,7 +94,7 @@ final class NettyRequestLifecycle extends RequestLifecycle {
     @Nullable
     @Override
     protected FileCustomizableResponseType findFile() {
-        Optional<URL> optionalUrl = rib.staticResourceResolver.resolve(request().getUri().getPath());
+        Optional<@RUntainted URL> optionalUrl = rib.staticResourceResolver.resolve(request().getUri().getPath());
         if (optionalUrl.isPresent()) {
             try {
                 URL url = optionalUrl.get();

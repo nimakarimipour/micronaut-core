@@ -40,6 +40,7 @@ import java.io.OutputStream;
 import java.nio.file.Files;
 import java.util.Optional;
 import java.util.concurrent.ExecutorService;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * An implementation of the {@link StreamingFileUpload} interface for Netty.
@@ -99,7 +100,7 @@ public final class NettyStreamingFileUpload implements StreamingFileUpload {
     }
 
     @Override
-    public Publisher<Boolean> transferTo(String location) {
+    public Publisher<Boolean> transferTo(@RUntainted String location) {
         String baseDirectory = configuration.getLocation().map(File::getAbsolutePath).orElse(DiskFileUpload.baseDirectory);
         File file = baseDirectory == null ? createTemp(location) : new File(baseDirectory, location);
         return transferTo(file);

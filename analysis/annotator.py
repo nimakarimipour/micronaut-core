@@ -70,6 +70,7 @@ def run_annotator(module):
 
 
 TO_RUN = MODULES
+TO_RUN = ['http-server-netty']
 ## Uncomment to run all modules
 # TO_RUN = MODULES
 for module in TO_RUN:

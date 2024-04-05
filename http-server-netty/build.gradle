@@ -129,15 +129,15 @@ repositories {
 }
 def checkerConfig = project.rootDir.absolutePath + "/annotator-out/" + project.name + "/checker.xml"
 checkerFramework {
-//    checkers =["edu.ucr.cs.riple.taint.ucrtainting.UCRTaintingChecker"]
-//    extraJavacArgs = [
-//            "-Awarns",
-//            "-AsuppressWarnings=type.anno.before.modifier,type.anno.before.decl.anno",
-//            "-AannotatedPackages=io.micronaut.core",
-//            "-AenableLibraryCheck=$System.env.ANNOTATOR_LIBRARY",
-//            "-AenablePolyTaintInference=$System.env.ANNOTATOR_POLY",
-//            "-AenableTypeArgumentInference=$System.env.ANNOTATOR_TYPE_ARG",
-//            "-AenableSerialization",
-//            "-AserializationConfigPath=$checkerConfig"
-//    ]
+   checkers =["edu.ucr.cs.riple.taint.ucrtainting.UCRTaintingChecker"]
+   extraJavacArgs = [
+           "-Awarns",
+           "-AsuppressWarnings=type.anno.before.modifier,type.anno.before.decl.anno",
+           "-AannotatedPackages=io.micronaut.core",
+           "-AenableLibraryCheck=$System.env.ANNOTATOR_LIBRARY",
+           "-AenablePolyTaintInference=$System.env.ANNOTATOR_POLY",
+           "-AenableTypeArgumentInference=$System.env.ANNOTATOR_TYPE_ARG",
+           "-AenableSerialization",
+           "-AserializationConfigPath=$checkerConfig"
+   ]
 }
