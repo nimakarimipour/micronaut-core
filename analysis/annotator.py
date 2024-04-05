@@ -29,7 +29,7 @@ MODULES = ['aop', 'context', 'core', 'core-processor', 'http-client', 'http-clie
 REPO = subprocess.check_output(['git', 'rev-parse', '--show-toplevel']).strip().decode('utf-8')
 ANNOTATOR_JAR = "{}/.m2/repository/edu/ucr/cs/riple/annotator/annotator-core/{}/annotator-core-{}.jar".format(
     str(Path.home()), VERSION, VERSION)
-UCRT_VERSION = '0.1-alpha-2'
+UCRT_VERSION = '0.1-alpha-3-SNAPSHOT'
 
 def prepare(dir, module):
     os.makedirs(dir, exist_ok=True)
@@ -69,8 +69,7 @@ def run_annotator(module):
     subprocess.call(commands)
 
 
-TO_RUN = ['aop', 'context', 'core', 'core-processor', 'core-reactive', 
-          'http', 'http-client', 'http-client-core', 'http-netty', 'http-server-netty', 'inject', 'jackson-core', 'jackson-databind', 'json-core']
+TO_RUN = ['core']
 ## Uncomment to run all modules
 # TO_RUN = MODULES
 for module in TO_RUN:
