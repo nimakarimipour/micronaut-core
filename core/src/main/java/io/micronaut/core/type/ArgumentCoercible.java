@@ -16,6 +16,7 @@
 package io.micronaut.core.type;
 
 import io.micronaut.core.annotation.NonNull;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * An interface for types that can be represented as an {@link Argument}.

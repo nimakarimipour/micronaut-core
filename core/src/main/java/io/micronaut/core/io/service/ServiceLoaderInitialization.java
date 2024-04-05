@@ -46,6 +46,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Integrates {@link io.micronaut.core.io.service.SoftServiceLoader} with GraalVM Native Image.
@@ -58,7 +59,7 @@ final class ServiceLoaderFeature implements Feature {
 
     @Override
     @SuppressWarnings("java:S1119")
-    public void beforeAnalysis(BeforeAnalysisAccess access) {
+    public void beforeAnalysis(@RUntainted BeforeAnalysisAccess access) {
         configureForReflection(access);
 
         StaticServiceDefinitions staticServiceDefinitions = buildStaticServiceDefinitions(access);
@@ -113,11 +114,11 @@ final class ServiceLoaderFeature implements Feature {
     }
 
     @NonNull
-    private StaticServiceDefinitions buildStaticServiceDefinitions(BeforeAnalysisAccess access) {
+    private StaticServiceDefinitions buildStaticServiceDefinitions(@RUntainted BeforeAnalysisAccess access) {
         StaticServiceDefinitions staticServiceDefinitions = new StaticServiceDefinitions(null);
         final String path = "META-INF/micronaut/";
         try {
-            final Enumeration<URL> micronautResources = access.getApplicationClassLoader().getResources(path);
+            final Enumeration<@RUntainted URL> micronautResources = access.getApplicationClassLoader().getResources(path);
             while (micronautResources.hasMoreElements()) {
                 Set<String> servicePaths = new HashSet<>();
                 URL url = micronautResources.nextElement();

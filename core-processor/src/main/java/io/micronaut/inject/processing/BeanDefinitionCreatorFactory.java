@@ -31,6 +31,7 @@ import io.micronaut.inject.ast.ElementQuery;
 import io.micronaut.inject.visitor.VisitorContext;
 
 import java.util.Collections;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Bean definition builder factory.

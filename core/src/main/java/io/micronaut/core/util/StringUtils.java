@@ -30,6 +30,8 @@ import java.util.Optional;
 import java.util.StringTokenizer;
 import java.util.function.Predicate;
 import java.util.regex.Pattern;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RPolyTainted;
 
 /**
  * Utility methods for Strings.

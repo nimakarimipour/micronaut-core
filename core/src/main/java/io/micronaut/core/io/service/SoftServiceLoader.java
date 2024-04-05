@@ -35,6 +35,7 @@ import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * <p>Variation of {@link java.util.ServiceLoader} that allows soft loading and conditional loading of
@@ -180,7 +181,7 @@ public final class SoftServiceLoader<S> implements Iterable<ServiceDefinition<S>
     private void collectDynamicServices(
             Collection<S> values,
             Predicate<S> predicate,
-            String name) {
+            @RUntainted String name) {
         ServiceCollector<S> collector = newCollector(name, condition, classLoader, className -> {
             try {
                 @SuppressWarnings("unchecked") final Class<S> loadedClass =
@@ -274,7 +275,7 @@ public final class SoftServiceLoader<S> implements Iterable<ServiceDefinition<S>
         return new DefaultServiceDefinition<>(name, loadedClass);
     }
 
-    public static <S> ServiceCollector<S> newCollector(String serviceName,
+    public static <S> ServiceCollector<S> newCollector(@RUntainted String serviceName,
                                                        Predicate<String> lineCondition,
                                                        ClassLoader classLoader,
                                                        Function<String, S> transformer) {

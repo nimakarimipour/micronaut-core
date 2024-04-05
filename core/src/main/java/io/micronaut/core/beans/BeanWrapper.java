@@ -28,6 +28,7 @@ import io.micronaut.core.annotation.NonNull;
 import io.micronaut.core.annotation.Nullable;
 import java.util.Collection;
 import java.util.Optional;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Wraps a bean allowing to read and write its properties via an underlying {@link BeanIntrospection}.

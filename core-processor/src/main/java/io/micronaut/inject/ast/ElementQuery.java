@@ -24,6 +24,7 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
 import java.util.function.Predicate;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * An interface for querying the AST for elements.
@@ -219,7 +220,7 @@ public interface ElementQuery<T extends Element> {
      * @param <T1> The element generic type
      * @return The query
      */
-    static @NonNull <T1 extends Element> ElementQuery<T1> of(@NonNull Class<T1> elementType) {
+    static @NonNull <T1 extends Element> @RUntainted ElementQuery<T1> of(@NonNull @RUntainted Class<T1> elementType) {
         return new DefaultElementQuery<>(
                 Objects.requireNonNull(elementType, "Element type cannot be null")
         );

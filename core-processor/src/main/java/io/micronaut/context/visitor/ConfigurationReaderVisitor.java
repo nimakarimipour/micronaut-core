@@ -38,6 +38,7 @@ import io.micronaut.inject.visitor.TypeElementVisitor;
 import io.micronaut.inject.visitor.VisitorContext;
 
 import java.util.Map;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * The visitor adds Validated annotation if one of the parameters is a constraint or @Valid.

@@ -1,0 +1,6 @@
+2024-04-04T18:29:17.204283:cd /home/nima/Developer/taint-benchmarks/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-3-SNAPSHOT ./gradlew aop:compileJava --rerun-tasks
+
+2024-04-04T18:30:07.474806:cd /home/nima/Developer/taint-benchmarks/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-3-SNAPSHOT ./gradlew aop:compileJava --rerun-tasks
+
+2024-04-04T18:30:49.990807:cd /home/nima/Developer/taint-benchmarks/micronaut-core && ANNOTATOR_TYPE_ARG=true ANNOTATOR_POLY=true ANNOTATOR_LIBRARY=true UCRT_VERSION=0.1-alpha-3-SNAPSHOT ./gradlew aop:compileJava --rerun-tasks
+

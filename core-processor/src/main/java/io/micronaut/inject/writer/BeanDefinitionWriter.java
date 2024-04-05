@@ -134,6 +134,7 @@ import java.util.function.Predicate;
 import java.util.stream.Stream;
 
 import static io.micronaut.inject.visitor.BeanElementVisitor.VISITORS;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * <p>Responsible for building {@link BeanDefinition} instances at compile time. Uses ASM build the class definition.</p>

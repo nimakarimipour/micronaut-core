@@ -37,6 +37,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Map;
 import java.util.Optional;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Provides a way for {@link TypeElementVisitor} classes to log messages during compilation and fail compilation.
@@ -170,7 +171,7 @@ public interface VisitorContext extends MutableConvertibleValues<Object>, ClassW
             return projectDir;
         }
         // let's find the projectDir
-        Optional<GeneratedFile> dummyFile = visitGeneratedFile("dummy" + System.nanoTime());
+        Optional<@RUntainted GeneratedFile> dummyFile = visitGeneratedFile("dummy" + System.nanoTime());
         if (dummyFile.isPresent()) {
             URI uri = dummyFile.get().toURI();
             // happens in tests 'mem:///CLASS_OUTPUT/dummy'
@@ -207,7 +208,7 @@ public interface VisitorContext extends MutableConvertibleValues<Object>, ClassW
      */
     @Experimental
     default Optional<Path> getClassesOutputPath() {
-        Optional<GeneratedFile> dummy = visitMetaInfFile("dummy", Element.EMPTY_ELEMENT_ARRAY);
+        Optional<@RUntainted GeneratedFile> dummy = visitMetaInfFile("dummy", Element.EMPTY_ELEMENT_ARRAY);
         if (dummy.isPresent()) {
             // we want the parent directory of META-INF/dummy
             Path classesOutputDir = Paths.get(dummy.get().toURI()).getParent().getParent();

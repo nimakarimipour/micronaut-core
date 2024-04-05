@@ -29,6 +29,8 @@ import java.nio.file.Paths;
 import java.util.Optional;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RPolyTainted;
 
 
 /**
@@ -58,7 +60,7 @@ public class DefaultFileSystemResourceLoader implements FileSystemResourceLoader
     /**
      * @param path The path
      */
-    public DefaultFileSystemResourceLoader(String path) {
+    public DefaultFileSystemResourceLoader(@RUntainted String path) {
         this(Paths.get(normalize(path)));
     }
 
@@ -78,7 +80,7 @@ public class DefaultFileSystemResourceLoader implements FileSystemResourceLoader
     }
 
     @Override
-    public Optional<InputStream> getResourceAsStream(String path) {
+    public Optional<InputStream> getResourceAsStream(@RUntainted String path) {
         Path filePath = getFilePath(normalize(path));
         if (isResolvableFile(filePath)) {
             try {
@@ -91,7 +93,7 @@ public class DefaultFileSystemResourceLoader implements FileSystemResourceLoader
     }
 
     @Override
-    public Optional<URL> getResource(String path) {
+    public Optional<URL> getResource(@RUntainted String path) {
         Path filePath = getFilePath(normalize(path));
         if (isResolvableFile(filePath)) {
             try {
@@ -105,7 +107,7 @@ public class DefaultFileSystemResourceLoader implements FileSystemResourceLoader
     }
 
     @Override
-    public Stream<URL> getResources(String name) {
+    public Stream<URL> getResources(@RUntainted String name) {
         return getResource(name).map(Stream::of).orElseGet(Stream::empty);
     }
 
@@ -114,7 +116,7 @@ public class DefaultFileSystemResourceLoader implements FileSystemResourceLoader
      * @return The resource loader
      */
     @Override
-    public ResourceLoader forBase(String basePath) {
+    public ResourceLoader forBase(@RUntainted String basePath) {
         return new DefaultFileSystemResourceLoader(basePath);
     }
 
@@ -123,7 +125,7 @@ public class DefaultFileSystemResourceLoader implements FileSystemResourceLoader
     }
 
     @SuppressWarnings("MagicNumber")
-    private static String normalize(String path) {
+    private static @RPolyTainted String normalize(@RPolyTainted String path) {
         if (path == null) {
             return null;
         }
@@ -133,7 +135,7 @@ public class DefaultFileSystemResourceLoader implements FileSystemResourceLoader
         return path;
     }
 
-    private Path getFilePath(String path) {
+    private Path getFilePath(@RUntainted String path) {
         BaseDir base = baseDir.get();
         if (base != null) {
             return base.resolve(path);
@@ -170,7 +172,7 @@ public class DefaultFileSystemResourceLoader implements FileSystemResourceLoader
             this.dir = baseDirPath;
         }
 
-        Path resolve(String path) {
+        Path resolve(@RUntainted String path) {
             if (dir != null) {
                 return dir.resolve(path);
             } else {

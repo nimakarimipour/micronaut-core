@@ -20,6 +20,7 @@ import io.micronaut.core.annotation.AnnotationMetadataProvider;
 import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Models a return type of an {@link Executable} method in Micronaut.

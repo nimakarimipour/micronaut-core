@@ -27,6 +27,7 @@ import java.net.HttpURLConnection;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.net.URLConnection;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Implementation of {@link Readable} for {@link URL}.
@@ -37,13 +38,13 @@ import java.net.URLConnection;
 @Internal
 class UrlReadable implements Readable {
 
-    private final URL url;
+    private final @RUntainted URL url;
 
     /**
      * Default constructor.
      * @param url The URL
      */
-    UrlReadable(URL url) {
+    UrlReadable(@RUntainted URL url) {
         ArgumentUtils.requireNonNull("url", url);
         this.url = url;
     }

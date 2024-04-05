@@ -16,6 +16,7 @@
 package io.micronaut.core.naming;
 
 import io.micronaut.core.annotation.NonNull;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * An interface for components that are named.

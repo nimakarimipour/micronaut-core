@@ -54,7 +54,7 @@ def run_annotator(module):
     commands += ['-i', 'edu.ucr.Initializer']
     commands += ['-n', 'edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted']
     commands += ['-cn', 'UCRTaint']
-    commands += ["--depth", "10"]
+    commands += ["--depth", "25"]
     # Uncomment to see build output
     # commands += ['-rboserr']
     # Comment to inject root at a time
@@ -69,7 +69,7 @@ def run_annotator(module):
     subprocess.call(commands)
 
 
-TO_RUN = ['core']
+TO_RUN = MODULES
 ## Uncomment to run all modules
 # TO_RUN = MODULES
 for module in TO_RUN:

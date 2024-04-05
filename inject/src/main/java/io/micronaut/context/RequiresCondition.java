@@ -49,6 +49,7 @@ import kotlin.KotlinVersion;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.util.*;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * An abstract {@link Condition} implementation that is based on the presence
@@ -81,18 +82,18 @@ public class RequiresCondition implements Condition {
     public static final String MEMBER_BEAN = "bean";
     public static final String MEMBER_BEAN_PROPERTY = "beanProperty";
 
-    private final AnnotationMetadata annotationMetadata;
+    private final @RUntainted AnnotationMetadata annotationMetadata;
 
     /**
      * @param annotationMetadata The annotation metadata
      */
-    public RequiresCondition(AnnotationMetadata annotationMetadata) {
+    public RequiresCondition(@RUntainted AnnotationMetadata annotationMetadata) {
         this.annotationMetadata = annotationMetadata;
     }
 
     @Override
-    public boolean matches(ConditionContext context) {
-        List<AnnotationValue<Requires>> requirements = annotationMetadata.getAnnotationValuesByType(Requires.class);
+    public boolean matches(@RUntainted ConditionContext context) {
+        List<@RUntainted AnnotationValue<Requires>> requirements = annotationMetadata.getAnnotationValuesByType(Requires.class);
         if (requirements.isEmpty()) {
             return true;
         }
@@ -161,7 +162,7 @@ public class RequiresCondition implements Condition {
      * This method will process requirements for a {@link BeanDefinitionReference} that has not yet been loaded. Unlike {@link #processPostStartRequirements(ConditionContext, AnnotationValue)}
      * this method is executed prior to the bean being loaded and processes requirements that do not require all the beans to be loaded.
      */
-    private void processPreStartRequirements(ConditionContext context, AnnotationValue<Requires> requirements) {
+    private void processPreStartRequirements(@RUntainted ConditionContext context, @RUntainted AnnotationValue<Requires> requirements) {
         if (!matchesPresenceOfClasses(context, requirements)) {
             return;
         }
@@ -210,7 +211,7 @@ public class RequiresCondition implements Condition {
     /**
      * This method will run conditions that require all beans to be loaded. These conditions included "beans", "bean", "missingBeans" and custom conditions.
      */
-    private void processPostStartRequirements(ConditionContext context, AnnotationValue<Requires> requirements) {
+    private void processPostStartRequirements(@RUntainted ConditionContext context, @RUntainted AnnotationValue<Requires> requirements) {
         processPreStartRequirements(context, requirements);
 
         if (context.isFailing()) {
@@ -605,9 +606,9 @@ public class RequiresCondition implements Condition {
         return true;
     }
 
-    private boolean matchesPresenceOfResources(ConditionContext context, AnnotationValue<Requires> requirements) {
+    private boolean matchesPresenceOfResources(@RUntainted ConditionContext context, @RUntainted AnnotationValue<Requires> requirements) {
         if (requirements.contains(MEMBER_RESOURCES)) {
-            final String[] resourcePaths = requirements.stringValues(MEMBER_RESOURCES);
+            final @RUntainted String[] resourcePaths = requirements.stringValues(MEMBER_RESOURCES);
             if (ArrayUtils.isNotEmpty(resourcePaths)) {
                 final BeanContext beanContext = context.getBeanContext();
                 ResourceResolver resolver;

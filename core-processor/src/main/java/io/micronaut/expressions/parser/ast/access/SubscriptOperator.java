@@ -29,6 +29,7 @@ import org.objectweb.asm.commons.Method;
 
 import java.util.List;
 import java.util.Map;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Handles list, map and array de-referencing.

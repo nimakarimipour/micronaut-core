@@ -18,6 +18,7 @@ package io.micronaut.inject.ast;
 import io.micronaut.core.annotation.NonNull;
 
 import java.util.Optional;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * A property element represents a JavaBean property on a {@link ClassElement}.

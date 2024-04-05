@@ -17,6 +17,7 @@ package io.micronaut.core.annotation;
 
 import io.micronaut.core.value.ValueResolver;
 import java.util.*;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Interface for types that resolve annotation values.

@@ -41,6 +41,7 @@ import static io.micronaut.expressions.parser.ast.util.EvaluatedExpressionCompil
 import static io.micronaut.expressions.parser.ast.util.EvaluatedExpressionCompilationUtils.pushUnboxPrimitiveIfNecessary;
 import static org.objectweb.asm.Opcodes.GOTO;
 import static org.objectweb.asm.commons.GeneratorAdapter.NE;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Expression AST node for ternary expressions.

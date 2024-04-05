@@ -38,6 +38,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Implementation of {@link ApplicationContextBuilder}.
@@ -56,7 +57,7 @@ public class DefaultApplicationContextBuilder implements ApplicationContextBuild
     private final Collection<String> configurationExcludes = new HashSet<>();
     private Boolean deduceEnvironments = null;
     private boolean deduceCloudEnvironment = false;
-    private ClassLoader classLoader = getClass().getClassLoader();
+    private @RUntainted ClassLoader classLoader = getClass().getClassLoader();
     private boolean envPropertySource = true;
     private final List<String> envVarIncludes = new ArrayList<>();
     private final List<String> envVarExcludes = new ArrayList<>();
@@ -76,7 +77,7 @@ public class DefaultApplicationContextBuilder implements ApplicationContextBuild
         loadApplicationContextCustomizer(resolveClassLoader()).configure(this);
     }
 
-    DefaultApplicationContextBuilder(ClassLoader classLoader) {
+    DefaultApplicationContextBuilder(@RUntainted ClassLoader classLoader) {
         loadApplicationContextCustomizer(classLoader).configure(this);
         this.classLoader = classLoader;
     }
@@ -280,7 +281,7 @@ public class DefaultApplicationContextBuilder implements ApplicationContextBuild
     }
 
     @Override
-    public @NonNull ApplicationContextBuilder mainClass(Class<?> mainClass) {
+    public @NonNull ApplicationContextBuilder mainClass(@RUntainted Class<?> mainClass) {
         if (mainClass != null) {
             if (this.classLoader == null) {
                 this.classLoader = mainClass.getClassLoader();
@@ -294,7 +295,7 @@ public class DefaultApplicationContextBuilder implements ApplicationContextBuild
     }
 
     @Override
-    public @NonNull ApplicationContextBuilder classLoader(ClassLoader classLoader) {
+    public @NonNull ApplicationContextBuilder classLoader(@RUntainted ClassLoader classLoader) {
         if (classLoader != null) {
             this.classLoader = classLoader;
         }

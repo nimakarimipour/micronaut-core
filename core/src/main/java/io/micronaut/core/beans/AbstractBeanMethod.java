@@ -24,6 +24,7 @@ import io.micronaut.core.type.Argument;
 import io.micronaut.core.type.ReturnType;
 
 import java.util.Map;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Abstract implementation of the {@link BeanMethod} interface.

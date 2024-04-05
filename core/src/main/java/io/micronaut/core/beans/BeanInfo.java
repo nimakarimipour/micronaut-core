@@ -19,6 +19,7 @@ import io.micronaut.core.annotation.AnnotationMetadataProvider;
 import io.micronaut.core.annotation.NonNull;
 import io.micronaut.core.type.Argument;
 import io.micronaut.core.type.ArgumentCoercible;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Top level interface for obtaining bean information.

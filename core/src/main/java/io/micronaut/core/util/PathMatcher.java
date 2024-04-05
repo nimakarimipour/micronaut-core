@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 package io.micronaut.core.util;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Interface for components that can match source strings against a specified pattern string.

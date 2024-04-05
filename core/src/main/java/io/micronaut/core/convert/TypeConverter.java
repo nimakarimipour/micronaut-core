@@ -19,6 +19,7 @@ import io.micronaut.core.annotation.Indexed;
 
 import java.util.Optional;
 import java.util.function.Function;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * <p>A type converter for converting from one type to another.</p>

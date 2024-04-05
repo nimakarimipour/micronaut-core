@@ -18,6 +18,7 @@ package io.micronaut.core.io.scan;
 import io.micronaut.core.io.ResourceLoader;
 
 import io.micronaut.core.annotation.Nullable;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Abstraction to load resources from the classpath.
@@ -49,7 +50,7 @@ public interface ClassPathResourceLoader extends ResourceLoader {
      * @param classLoader The classloader
      * @return The default loader
      */
-    static ClassPathResourceLoader defaultLoader(@Nullable ClassLoader classLoader) {
+    static ClassPathResourceLoader defaultLoader(@Nullable @RUntainted ClassLoader classLoader) {
         if (classLoader == null) {
             classLoader = Thread.currentThread().getContextClassLoader();
         }

@@ -19,6 +19,7 @@ import io.micronaut.core.io.Writable;
 
 import java.io.IOException;
 import java.io.Writer;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Metadata about a property.

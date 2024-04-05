@@ -25,6 +25,7 @@ import io.micronaut.logging.LogLevel;
 import io.micronaut.logging.LoggingSystem;
 import jakarta.inject.Singleton;
 import org.slf4j.LoggerFactory;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * An implementation of {@link LoggingSystem} that works with logback.
@@ -39,7 +40,7 @@ public final class LogbackLoggingSystem implements LoggingSystem {
 
     private static final String DEFAULT_LOGBACK_LOCATION = "logback.xml";
 
-    private final String logbackXmlLocation;
+    private final @RUntainted String logbackXmlLocation;
 
     /**
      * @param logbackExternalConfigLocation The location of the logback configuration file set via logback properties
@@ -47,8 +48,8 @@ public final class LogbackLoggingSystem implements LoggingSystem {
      * @since 3.8.8
      */
     public LogbackLoggingSystem(
-        @Nullable @Property(name = "logback.configurationFile") String logbackExternalConfigLocation,
-        @Nullable @Property(name = "logger.config") String logbackXmlLocation
+        @Nullable @Property(name = "logback.configurationFile") @RUntainted String logbackExternalConfigLocation,
+        @Nullable @Property(name = "logger.config") @RUntainted String logbackXmlLocation
     ) {
         if (logbackExternalConfigLocation != null) {
             this.logbackXmlLocation = logbackExternalConfigLocation;

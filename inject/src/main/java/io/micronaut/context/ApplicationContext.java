@@ -28,6 +28,7 @@ import io.micronaut.core.value.PropertyResolver;
 import java.util.Collections;
 import java.util.Map;
 import java.util.function.Consumer;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * <p>An application context extends a {@link BeanContext} and adds the concepts of configuration, environments and
@@ -281,7 +282,7 @@ public interface ApplicationContext extends BeanContext, PropertyResolver, Prope
      * @param classLoader The class loader to use
      * @return The application context builder
      */
-    static @NonNull ApplicationContextBuilder builder(ClassLoader classLoader) {
+    static @NonNull ApplicationContextBuilder builder(@RUntainted ClassLoader classLoader) {
         return new DefaultApplicationContextBuilder(classLoader);
     }
 
@@ -292,7 +293,7 @@ public interface ApplicationContext extends BeanContext, PropertyResolver, Prope
      * @param environments The environments to use
      * @return The running {@link ApplicationContext}
      */
-    static @NonNull ApplicationContext run(@NonNull ClassLoader classLoader, @NonNull String... environments) {
+    static @NonNull ApplicationContext run(@NonNull @RUntainted ClassLoader classLoader, @NonNull String... environments) {
         ArgumentUtils.requireNonNull("environments", environments);
         ArgumentUtils.requireNonNull("classLoader", classLoader);
         return builder(classLoader, environments).start();
@@ -305,7 +306,7 @@ public interface ApplicationContext extends BeanContext, PropertyResolver, Prope
      * @param environments The environment to use
      * @return The application context builder
      */
-    static @NonNull ApplicationContextBuilder builder(@NonNull ClassLoader classLoader, @NonNull String... environments) {
+    static @NonNull ApplicationContextBuilder builder(@NonNull @RUntainted ClassLoader classLoader, @NonNull String... environments) {
         ArgumentUtils.requireNonNull("environments", environments);
         ArgumentUtils.requireNonNull("classLoader", classLoader);
 

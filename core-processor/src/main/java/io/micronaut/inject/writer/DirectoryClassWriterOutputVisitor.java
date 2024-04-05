@@ -27,6 +27,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 import java.util.Optional;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * A {@link ClassWriterOutputVisitor} that writes to a target directory.
@@ -37,24 +38,24 @@ import java.util.Optional;
 @Internal
 public class DirectoryClassWriterOutputVisitor extends AbstractClassWriterOutputVisitor {
 
-    private final File targetDir;
+    private final @RUntainted File targetDir;
 
     /**
      * @param targetDir The target directory
      */
-    public DirectoryClassWriterOutputVisitor(File targetDir) {
+    public DirectoryClassWriterOutputVisitor(@RUntainted File targetDir) {
         super(true);
         this.targetDir = targetDir;
     }
 
     @Override
     @SuppressWarnings("java:S3878")
-    public OutputStream visitClass(String classname, @Nullable Element originatingElement) throws IOException {
+    public OutputStream visitClass(@RUntainted String classname, @Nullable Element originatingElement) throws IOException {
         return visitClass(classname, new Element[]{ originatingElement });
     }
 
     @Override
-    public OutputStream visitClass(String classname, Element... originatingElements) throws IOException {
+    public OutputStream visitClass(@RUntainted String classname, Element... originatingElements) throws IOException {
         File targetFile = new File(targetDir, getClassFileName(classname)).getCanonicalFile();
         makeParent(targetFile.toPath());
         return Files.newOutputStream(targetFile.toPath());
@@ -77,7 +78,7 @@ public class DirectoryClassWriterOutputVisitor extends AbstractClassWriterOutput
     }
 
     @Override
-    public Optional<GeneratedFile> visitMetaInfFile(String path, Element... originatingElements) {
+    public Optional<GeneratedFile> visitMetaInfFile(@RUntainted String path, Element... originatingElements) {
         return Optional.ofNullable(targetDir).map(root ->
             new FileBackedGeneratedFile(
                 new File(root, "META-INF" + File.separator + path)
@@ -86,12 +87,12 @@ public class DirectoryClassWriterOutputVisitor extends AbstractClassWriterOutput
     }
 
     @Override
-    public Optional<GeneratedFile> visitGeneratedFile(String path) {
+    public Optional<GeneratedFile> visitGeneratedFile(@RUntainted String path) {
         return getGeneratedFile(path);
     }
 
     @NonNull
-    private Optional<GeneratedFile> getGeneratedFile(String path) {
+    private Optional<GeneratedFile> getGeneratedFile(@RUntainted String path) {
         File parentFile = targetDir.getParentFile();
         File generatedDir = new File(parentFile, "generated");
         File f = new File(generatedDir, path);
@@ -102,7 +103,7 @@ public class DirectoryClassWriterOutputVisitor extends AbstractClassWriterOutput
     }
 
     @Override
-    public Optional<GeneratedFile> visitGeneratedFile(String path, Element... originatingElements) {
+    public Optional<GeneratedFile> visitGeneratedFile(@RUntainted String path, Element... originatingElements) {
         return getGeneratedFile(path);
     }
 

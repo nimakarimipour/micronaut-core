@@ -21,6 +21,7 @@ import io.micronaut.core.type.Argument;
 
 import java.util.Map;
 import java.util.Optional;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * A simple map based implementation of the {@link ValueResolver} interface.

@@ -47,6 +47,7 @@ import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Wrapper class for the tasks required to find services of a particular type.
@@ -56,18 +57,18 @@ import java.util.function.Predicate;
 @Internal
 final class ServiceScanner<S> {
     private final ClassLoader classLoader;
-    private final String serviceName;
+    private final @RUntainted String serviceName;
     private final Predicate<String> lineCondition;
     private final Function<String, S> transformer;
 
-    public ServiceScanner(ClassLoader classLoader, String serviceName, Predicate<String> lineCondition, Function<String, S> transformer) {
+    public ServiceScanner(ClassLoader classLoader, @RUntainted String serviceName, Predicate<String> lineCondition, Function<String, S> transformer) {
         this.classLoader = classLoader;
         this.serviceName = serviceName;
         this.lineCondition = lineCondition;
         this.transformer = transformer;
     }
 
-    private static URI normalizeFilePath(String path, URI uri) {
+    private static @RUntainted URI normalizeFilePath(@RUntainted String path, @RUntainted URI uri) {
         Path p = Paths.get(uri);
         if (p.endsWith(path)) {
             Path subpath = Paths.get(path);
@@ -83,7 +84,7 @@ final class ServiceScanner<S> {
      * Note: referenced by {@code io.micronaut.core.graal.ServiceLoaderInitialization}.
      */
     @SuppressWarnings("java:S3398")
-    private static Set<String> computeMicronautServiceTypeNames(URI uri, String path) {
+    private static Set<String> computeMicronautServiceTypeNames(@RUntainted URI uri, String path) {
         final StaticServiceDefinitions ssd = findStaticServiceDefinitions();
         if (ssd != null) {
             return ssd.serviceTypeMap.getOrDefault(
@@ -161,7 +162,7 @@ final class ServiceScanner<S> {
         return classLoader.getClass().getName().startsWith("com.ibm.ws.classloader");
     }
 
-    private String buildResourceSearchPath() {
+    private @RUntainted String buildResourceSearchPath() {
         String path = "META-INF/micronaut/" + serviceName;
 
         if (isWebSphereClassLoader()) {
@@ -273,11 +274,11 @@ final class ServiceScanner<S> {
     }
 
     private final class MicronautMetaServicesLoader extends RecursiveActionValuesCollector<S> {
-        private final URI uri;
+        private final @RUntainted URI uri;
         private final List<ServiceInstanceLoader> tasks = new ArrayList<>();
         private final String path;
 
-        private MicronautMetaServicesLoader(URI uri, String path) {
+        private MicronautMetaServicesLoader(@RUntainted URI uri, String path) {
             this.uri = uri;
             this.path = path;
         }

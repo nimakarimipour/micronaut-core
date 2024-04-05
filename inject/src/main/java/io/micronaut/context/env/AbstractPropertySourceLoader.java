@@ -30,6 +30,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * An abstract implementation of the {@link PropertySourceLoader} interface.
@@ -60,16 +61,16 @@ public abstract class AbstractPropertySourceLoader implements PropertySourceLoad
     }
 
     @Override
-    public Optional<PropertySource> load(String resourceName, ResourceLoader resourceLoader) {
+    public Optional<PropertySource> load(@RUntainted String resourceName, ResourceLoader resourceLoader) {
         return load(resourceLoader, resourceName, getOrder());
     }
 
     @Override
-    public Optional<PropertySource> loadEnv(String resourceName, ResourceLoader resourceLoader, ActiveEnvironment activeEnvironment) {
+    public Optional<PropertySource> loadEnv(@RUntainted String resourceName, ResourceLoader resourceLoader, @RUntainted ActiveEnvironment activeEnvironment) {
         return load(resourceLoader, resourceName + "-" + activeEnvironment.getName(), this.getOrder() + 1 + activeEnvironment.getPriority());
     }
 
-    private Optional<PropertySource> load(ResourceLoader resourceLoader, String fileName, int order) {
+    private Optional<PropertySource> load(ResourceLoader resourceLoader, @RUntainted String fileName, int order) {
         if (isEnabled()) {
             Set<String> extensions = getExtensions();
             for (String ext : extensions) {
@@ -101,7 +102,7 @@ public abstract class AbstractPropertySourceLoader implements PropertySourceLoad
                         };
     }
 
-    private Map<String, Object> loadProperties(ResourceLoader resourceLoader, String qualifiedName, String fileName) {
+    private Map<String, Object> loadProperties(ResourceLoader resourceLoader, String qualifiedName, @RUntainted String fileName) {
         Optional<InputStream> config = readInput(resourceLoader, fileName);
         if (config.isPresent()) {
             log.debug("Found PropertySource for file name: {}", fileName);
@@ -128,7 +129,7 @@ public abstract class AbstractPropertySourceLoader implements PropertySourceLoad
      * @param fileName       The file name
      * @return An input stream wrapped inside an {@link Optional}
      */
-    protected Optional<InputStream> readInput(ResourceLoader resourceLoader, String fileName) {
+    protected Optional<InputStream> readInput(ResourceLoader resourceLoader, @RUntainted String fileName) {
         return resourceLoader.getResourceAsStream(fileName);
     }
 

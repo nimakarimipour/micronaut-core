@@ -29,6 +29,7 @@ import java.net.URL;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Abstraction over {@link java.io.File} and {@link java.net.URL} based I/O.
@@ -83,7 +84,7 @@ public interface Readable extends Named {
      * @param url The URL
      * @return The readable.
      */
-    static @NonNull Readable of(@NonNull URL url) {
+    static @NonNull Readable of(@NonNull @RUntainted URL url) {
         return new UrlReadable(url);
     }
 

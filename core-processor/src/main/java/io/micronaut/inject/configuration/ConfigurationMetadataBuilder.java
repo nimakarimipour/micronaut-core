@@ -42,6 +42,7 @@ import java.util.List;
 
 import static io.micronaut.inject.configuration.ConfigurationUtils.buildPropertyPath;
 import static io.micronaut.inject.configuration.ConfigurationUtils.getRequiredTypePath;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * <p>A builder for producing metadata for the available {@link io.micronaut.context.annotation.ConfigurationProperties}.</p>
@@ -246,7 +247,7 @@ public class ConfigurationMetadataBuilder {
      * @param value The value
      * @throws IOException If an error occurred writing output
      */
-    static void writeAttribute(Writer out, String name, String value) throws IOException {
+    static void writeAttribute(Writer out, @RUntainted String name, String value) throws IOException {
         out.write('"');
         out.write(name);
         out.write("\":");

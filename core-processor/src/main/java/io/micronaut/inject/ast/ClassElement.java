@@ -52,6 +52,7 @@ import java.util.function.Function;
 import java.util.stream.Stream;
 
 import static io.micronaut.inject.writer.BeanDefinitionVisitor.PROXY_SUFFIX;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Stores data about an element that references a class.

@@ -28,6 +28,7 @@ import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Adapts an {@link AnnotationValue} to the environment.
@@ -39,7 +40,7 @@ import java.util.stream.Stream;
 @Internal
 class EnvironmentAnnotationValue<A extends Annotation> extends AnnotationValue<A> {
 
-    private final Environment environment;
+    private final @RUntainted Environment environment;
 
     /**
      * Default constructor.
@@ -47,7 +48,7 @@ class EnvironmentAnnotationValue<A extends Annotation> extends AnnotationValue<A
      * @param environment The environment
      * @param target The target
      */
-    EnvironmentAnnotationValue(Environment environment, AnnotationValue<A> target) {
+    EnvironmentAnnotationValue(@RUntainted Environment environment, AnnotationValue<A> target) {
         super(target, AnnotationMetadataSupport.getDefaultValues(target.getAnnotationName()), EnvironmentConvertibleValuesMap.of(
                 environment,
                 target.getValues()

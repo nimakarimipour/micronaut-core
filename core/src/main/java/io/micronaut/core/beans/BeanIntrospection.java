@@ -31,6 +31,7 @@ import java.lang.annotation.Annotation;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Optional;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * A {@link BeanIntrospection} is the result of compile time computation of a beans properties and annotation metadata.

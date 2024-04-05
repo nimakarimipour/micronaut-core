@@ -30,6 +30,7 @@ import io.micronaut.core.annotation.Nullable;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Optional;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Represents a bean property and associated annotation metadata.

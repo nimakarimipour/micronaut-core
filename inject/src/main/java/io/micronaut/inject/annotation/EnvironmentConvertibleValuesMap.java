@@ -33,6 +33,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Extended version of {@link ConvertibleValuesMap} that resolves placeholders based on the environment.
@@ -44,13 +45,13 @@ import java.util.stream.Stream;
 @Internal
 class EnvironmentConvertibleValuesMap<V> extends ConvertibleValuesMap<V> {
 
-    private final Environment environment;
+    private final @RUntainted Environment environment;
 
     /**
      * @param map         A map of values
      * @param environment The environment
      */
-    EnvironmentConvertibleValuesMap(Map<? extends CharSequence, V> map, Environment environment) {
+    EnvironmentConvertibleValuesMap(Map<? extends CharSequence, V> map, @RUntainted Environment environment) {
         super(map, environment);
         this.environment = environment;
     }
@@ -134,7 +135,7 @@ class EnvironmentConvertibleValuesMap<V> extends ConvertibleValuesMap<V> {
      * @param <T>         The target generic type
      * @return The values
      */
-    static <T> ConvertibleValues<T> of(Environment environment, Map<? extends CharSequence, T> values) {
+    static <T> ConvertibleValues<T> of(@RUntainted Environment environment, Map<? extends CharSequence, T> values) {
         if (values == null) {
             return ConvertibleValuesMap.empty();
         } else {

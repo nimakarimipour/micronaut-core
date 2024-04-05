@@ -24,6 +24,7 @@ import java.io.Writer;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * A {@link ConfigurationMetadataWriter} that writes out metadata in the format defined by
@@ -66,7 +67,7 @@ public class JsonConfigurationMetadataWriter implements ConfigurationMetadataWri
         return "spring-configuration-metadata.json";
     }
 
-    private void writeMetadata(String attr, List<? extends Writable> configurations, Writer writer) throws IOException {
+    private void writeMetadata(@RUntainted String attr, List<? extends Writable> configurations, Writer writer) throws IOException {
         writer.write('"');
         writer.write(attr);
         writer.write("\":[");

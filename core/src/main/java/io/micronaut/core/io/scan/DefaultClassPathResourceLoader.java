@@ -42,6 +42,7 @@ import java.util.Optional;
 import java.util.stream.Stream;
 
 import org.slf4j.helpers.NOPLogger;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Loads resources from the classpath.
@@ -54,8 +55,8 @@ public class DefaultClassPathResourceLoader implements ClassPathResourceLoader {
 
     private final Logger log;
 
-    private final ClassLoader classLoader;
-    private final String basePath;
+    private final @RUntainted ClassLoader classLoader;
+    private final @RUntainted String basePath;
     private final URL baseURL;
     private final Map<String, Boolean> isDirectoryCache = new ConcurrentLinkedHashMap.Builder<String, Boolean>()
             .maximumWeightedCapacity(50).build();
@@ -67,7 +68,7 @@ public class DefaultClassPathResourceLoader implements ClassPathResourceLoader {
      *
      * @param classLoader The class loader for loading resources
      */
-    public DefaultClassPathResourceLoader(ClassLoader classLoader) {
+    public DefaultClassPathResourceLoader(@RUntainted ClassLoader classLoader) {
         this(classLoader, null);
     }
 
@@ -77,7 +78,7 @@ public class DefaultClassPathResourceLoader implements ClassPathResourceLoader {
      * @param classLoader The class loader for loading resources
      * @param basePath    The path to look for resources under
      */
-    public DefaultClassPathResourceLoader(ClassLoader classLoader, String basePath) {
+    public DefaultClassPathResourceLoader(@RUntainted ClassLoader classLoader, @RUntainted String basePath) {
         this(classLoader, basePath, false);
     }
 
@@ -88,7 +89,7 @@ public class DefaultClassPathResourceLoader implements ClassPathResourceLoader {
      * @param basePath    The path to look for resources under
      * @param checkBase   If set to {@code true} an extended check for the base path is performed otherwise paths with relative URLs like {@code ../} are prohibited.
      */
-    public DefaultClassPathResourceLoader(ClassLoader classLoader, String basePath, boolean checkBase) {
+    public DefaultClassPathResourceLoader(@RUntainted ClassLoader classLoader, @RUntainted String basePath, boolean checkBase) {
         this(classLoader, basePath, checkBase, true);
     }
 
@@ -100,7 +101,7 @@ public class DefaultClassPathResourceLoader implements ClassPathResourceLoader {
      * @param checkBase   If set to {@code true} an extended check for the base path is performed otherwise paths with relative URLs like {@code ../} are prohibited.
      * @param logEnabled flag to enable or disable logger
      */
-    public DefaultClassPathResourceLoader(ClassLoader classLoader, String basePath, boolean checkBase, boolean logEnabled) {
+    public DefaultClassPathResourceLoader(@RUntainted ClassLoader classLoader, @RUntainted String basePath, boolean checkBase, boolean logEnabled) {
 
         log = logEnabled ? LoggerFactory.getLogger(getClass()) : NOPLogger.NOP_LOGGER;
 
@@ -118,7 +119,7 @@ public class DefaultClassPathResourceLoader implements ClassPathResourceLoader {
      * @return An optional resource
      */
     @Override
-    public Optional<InputStream> getResourceAsStream(String path) {
+    public Optional<InputStream> getResourceAsStream(@RUntainted String path) {
         if (missingPath) {
             return Optional.empty();
         } else if (isProhibitedRelativePath(path)) {
@@ -207,7 +208,7 @@ public class DefaultClassPathResourceLoader implements ClassPathResourceLoader {
      * @return An optional resource
      */
     @Override
-    public Optional<URL> getResource(String path) {
+    public Optional<URL> getResource(@RUntainted String path) {
         if (missingPath) {
             return Optional.empty();
         } else if (isProhibitedRelativePath(path)) {
@@ -236,7 +237,7 @@ public class DefaultClassPathResourceLoader implements ClassPathResourceLoader {
      * @return A resource stream
      */
     @Override
-    public Stream<URL> getResources(String path) {
+    public Stream<URL> getResources(@RUntainted String path) {
         if (missingPath) {
             return Stream.empty();
         } else if (isProhibitedRelativePath(path)) {
@@ -272,7 +273,7 @@ public class DefaultClassPathResourceLoader implements ClassPathResourceLoader {
      * @return The resource loader
      */
     @Override
-    public ResourceLoader forBase(String basePath) {
+    public ResourceLoader forBase(@RUntainted String basePath) {
         return new DefaultClassPathResourceLoader(classLoader, basePath);
     }
 
@@ -284,12 +285,12 @@ public class DefaultClassPathResourceLoader implements ClassPathResourceLoader {
      *
      * @return The resource loader
      */
-    public ResourceLoader forBase(String basePath, boolean logEnabled) {
+    public ResourceLoader forBase(@RUntainted String basePath, boolean logEnabled) {
         return new DefaultClassPathResourceLoader(classLoader, basePath, false, logEnabled);
     }
 
     @SuppressWarnings("MagicNumber")
-    private String normalize(String path) {
+    private @RUntainted String normalize(@RUntainted String path) {
         if (path != null) {
             if (path.startsWith("classpath:")) {
                 path = path.substring(10);
@@ -305,7 +306,7 @@ public class DefaultClassPathResourceLoader implements ClassPathResourceLoader {
     }
 
     @SuppressWarnings("ConstantConditions")
-    private boolean isDirectory(String path) {
+    private boolean isDirectory(@RUntainted String path) {
         return isDirectoryCache.computeIfAbsent(path, s -> {
             URL url = classLoader.getResource(prefixPath(path));
             if (url != null) {
@@ -350,7 +351,7 @@ public class DefaultClassPathResourceLoader implements ClassPathResourceLoader {
     }
 
     @SuppressWarnings("MagicNumber")
-    private String prefixPath(String path) {
+    private @RUntainted String prefixPath(@RUntainted String path) {
         if (path.startsWith("classpath:")) {
             path = path.substring(10);
         }

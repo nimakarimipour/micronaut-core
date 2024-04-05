@@ -20,6 +20,7 @@ import io.micronaut.core.value.OptionalValues;
 
 import java.lang.annotation.Annotation;
 import java.util.*;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * An interface that can be implemented by other classes that delegate the resolution of the {@link AnnotationMetadata}

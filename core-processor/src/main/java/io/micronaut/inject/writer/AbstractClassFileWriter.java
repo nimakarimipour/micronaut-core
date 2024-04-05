@@ -72,6 +72,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 import static io.micronaut.inject.annotation.AnnotationMetadataWriter.isSupportedMapValue;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Abstract class that writes generated classes to disk and provides convenience methods for building classes.
@@ -172,7 +173,7 @@ public abstract class AbstractClassFileWriter implements Opcodes, OriginatingEle
     static {
         MAP_OF = new Method[11];
         for (int i = 0; i < MAP_OF.length; i++) {
-            Class[] mapArgs = new Class[i * 2];
+            @RUntainted Class[] mapArgs = new Class[i * 2];
             for (int k = 0; k < i * 2; k += 2) {
                 mapArgs[k] = Object.class;
                 mapArgs[k + 1] = Object.class;
@@ -186,7 +187,7 @@ public abstract class AbstractClassFileWriter implements Opcodes, OriginatingEle
     static {
         LIST_OF = new Method[11];
         for (int i = 0; i < LIST_OF.length; i++) {
-            Class[] listArgs = new Class[i];
+            @RUntainted Class[] listArgs = new Class[i];
             for (int k = 0; k < i; k += 1) {
                 listArgs[k] = Object.class;
             }
@@ -778,7 +779,7 @@ public abstract class AbstractClassFileWriter implements Opcodes, OriginatingEle
      * @param targetDir The target directory
      * @throws IOException if there is an error writing the file
      */
-    public void writeTo(File targetDir) throws IOException {
+    public void writeTo(@RUntainted File targetDir) throws IOException {
         accept(newClassWriterOutputVisitor(targetDir));
     }
 
@@ -1428,7 +1429,7 @@ public abstract class AbstractClassFileWriter implements Opcodes, OriginatingEle
      * @param className   The class name
      * @throws IOException if there is a problem writing the class to disk
      */
-    protected void writeClassToDisk(File targetDir, ClassWriter classWriter, String className) throws IOException {
+    protected void writeClassToDisk(@RUntainted File targetDir, ClassWriter classWriter, @RUntainted String className) throws IOException {
         if (targetDir != null) {
 
             String fileName = className.replace('.', '/') + ".class";
@@ -1678,7 +1679,7 @@ public abstract class AbstractClassFileWriter implements Opcodes, OriginatingEle
      * @param compilationDir The compilation directory
      * @return The directory class writer output visitor
      */
-    protected ClassWriterOutputVisitor newClassWriterOutputVisitor(File compilationDir) {
+    protected ClassWriterOutputVisitor newClassWriterOutputVisitor(@RUntainted File compilationDir) {
         return new DirectoryClassWriterOutputVisitor(compilationDir);
     }
 
@@ -1763,7 +1764,7 @@ public abstract class AbstractClassFileWriter implements Opcodes, OriginatingEle
      * @param generatedFile The generated file
      * @throws IOException An exception if an error occurs
      */
-    protected void generateServiceDescriptor(String className, GeneratedFile generatedFile) throws IOException {
+    protected void generateServiceDescriptor(@RUntainted String className, GeneratedFile generatedFile) throws IOException {
         CharSequence contents = generatedFile.getTextContent();
         if (contents != null) {
             String[] entries = contents.toString().split("\\n");

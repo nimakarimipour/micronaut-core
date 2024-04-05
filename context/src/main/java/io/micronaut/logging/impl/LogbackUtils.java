@@ -31,6 +31,7 @@ import java.util.List;
 import java.util.function.Supplier;
 
 import static ch.qos.logback.classic.util.ClassicEnvUtil.loadFromServiceLoader;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Utility methods to configure {@link LoggerContext}.
@@ -52,7 +53,7 @@ public final class LogbackUtils {
      */
     public static void configure(@NonNull ClassLoader classLoader,
                                  @NonNull LoggerContext context,
-                                 @NonNull String logbackXmlLocation) {
+                                 @NonNull @RUntainted String logbackXmlLocation) {
         configure(context, logbackXmlLocation, () -> {
             // Check classpath first
             URL resource = classLoader.getResource(logbackXmlLocation);

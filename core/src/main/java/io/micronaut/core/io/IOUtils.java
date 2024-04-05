@@ -42,6 +42,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.function.Consumer;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Utility methods for I/O operations.
@@ -74,7 +75,7 @@ public class IOUtils {
      */
     @Blocking
     @SuppressWarnings({"java:S2095", "S1141"})
-    public static void eachFile(@NonNull URL url, String path, @NonNull Consumer<Path> consumer) {
+    public static void eachFile(@NonNull @RUntainted URL url, String path, @NonNull Consumer<Path> consumer) {
         try {
             eachFile(url.toURI(), path, consumer);
         } catch (URISyntaxException e) {
@@ -92,7 +93,7 @@ public class IOUtils {
      */
     @Blocking
     @SuppressWarnings({"java:S2095", "java:S1141", "java:S3776"})
-    public static void eachFile(@NonNull URI uri, String path, @NonNull Consumer<Path> consumer) {
+    public static void eachFile(@NonNull @RUntainted URI uri, String path, @NonNull Consumer<Path> consumer) {
         List<Closeable> toClose = new ArrayList<>();
         try {
             Path myPath = resolvePath(uri, path, toClose, IOUtils::loadNestedJarUri);
@@ -138,7 +139,7 @@ public class IOUtils {
     }
 
     @Nullable
-    static Path resolvePath(@NonNull URI uri,
+    static Path resolvePath(@NonNull @RUntainted URI uri,
                             String path,
                             List<Closeable> toClose,
                             IOExceptionBiFunction<List<Closeable>, String, Path> loadNestedJarUriFunction) throws IOException {
@@ -174,7 +175,7 @@ public class IOUtils {
         }
     }
 
-    private static Path loadNestedJarUri(List<Closeable> toClose, String jarUri) throws IOException {
+    private static Path loadNestedJarUri(List<Closeable> toClose, @RUntainted String jarUri) throws IOException {
         int sep = jarUri.lastIndexOf("!/");
         if (sep == -1) {
             return Paths.get(URI.create(jarUri));

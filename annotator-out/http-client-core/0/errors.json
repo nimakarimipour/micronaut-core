@@ -1,1 +1,0 @@
-{"path":"/home/nima/Developer/taint-benchmarks/micronaut-core/http-client-core/src/main/java/io/micronaut/http/client/HttpClient.java","messageKey":"assignment","offset":1503,"index":1,"region":{"symbol":"DEFAULT_ERROR_TYPE","class":"io.micronaut.http.client.HttpClient"},"fixes":[]},

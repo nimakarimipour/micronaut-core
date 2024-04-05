@@ -88,6 +88,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.stream.Collectors;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * A class that generates AOP proxy classes at compile time.
@@ -1129,7 +1130,7 @@ public class AopProxyWriter extends AbstractClassFileWriter implements ProxyingB
      * @throws IOException If an error occurs writing the file
      */
     @Override
-    public void writeTo(File compilationDir) throws IOException {
+    public void writeTo(@RUntainted File compilationDir) throws IOException {
         accept(newClassWriterOutputVisitor(compilationDir));
     }
 

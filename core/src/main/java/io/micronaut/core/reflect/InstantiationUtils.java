@@ -32,6 +32,7 @@ import java.lang.reflect.Constructor;
 import java.util.*;
 import java.util.function.Function;
 import java.util.function.Supplier;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Utility methods for instantiating objects.

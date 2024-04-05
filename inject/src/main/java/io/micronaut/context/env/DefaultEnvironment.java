@@ -66,6 +66,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * <p>The default implementation of the {@link Environment} interface. Configures a named environment.</p>
@@ -116,7 +117,7 @@ public class DefaultEnvironment extends PropertySourcePropertyResolver implement
     private final AtomicBoolean reading = new AtomicBoolean(false);
     private final Boolean deduceEnvironments;
     private final ApplicationContextConfiguration configuration;
-    private final Collection<String> configLocations;
+    private final Collection<@RUntainted String> configLocations;
 
     /**
      * Construct a new environment for the given configuration.
@@ -329,17 +330,17 @@ public class DefaultEnvironment extends PropertySourcePropertyResolver implement
     }
 
     @Override
-    public Optional<InputStream> getResourceAsStream(String path) {
+    public Optional<InputStream> getResourceAsStream(@RUntainted String path) {
         return resourceLoader.getResourceAsStream(path);
     }
 
     @Override
-    public Optional<URL> getResource(String path) {
+    public Optional<URL> getResource(@RUntainted String path) {
         return resourceLoader.getResource(path);
     }
 
     @Override
-    public Stream<URL> getResources(String path) {
+    public Stream<URL> getResources(@RUntainted String path) {
         return resourceLoader.getResources(path);
     }
 
@@ -349,7 +350,7 @@ public class DefaultEnvironment extends PropertySourcePropertyResolver implement
     }
 
     @Override
-    public ResourceLoader forBase(String basePath) {
+    public ResourceLoader forBase(@RUntainted String basePath) {
         return resourceLoader.forBase(basePath);
     }
 
@@ -640,7 +641,7 @@ public class DefaultEnvironment extends PropertySourcePropertyResolver implement
      * @param propertySourceLoader The appropriate property source loader
      * @throws ConfigurationException If unable to find the appropriate property source loader for the given file
      */
-    private Optional<Map<String, Object>> readPropertiesFromLoader(String fileName, String filePath, PropertySourceLoader propertySourceLoader) throws ConfigurationException {
+    private Optional<Map<String, Object>> readPropertiesFromLoader(String fileName, @RUntainted String filePath, PropertySourceLoader propertySourceLoader) throws ConfigurationException {
         ResourceLoader loader = new ResourceResolver().getSupportingLoader(filePath)
                 .orElse(FileSystemResourceLoader.defaultLoader());
         try {
@@ -1009,7 +1010,7 @@ public class DefaultEnvironment extends PropertySourcePropertyResolver implement
         return false;
     }
 
-    private static String readFile(String path) {
+    private static String readFile(@RUntainted String path) {
         try {
             Path pathPath = Paths.get(path);
             if (!Files.exists(pathPath)) {

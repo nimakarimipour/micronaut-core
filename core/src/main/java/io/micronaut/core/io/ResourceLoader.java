@@ -21,6 +21,7 @@ import java.io.InputStream;
 import java.net.URL;
 import java.util.Optional;
 import java.util.stream.Stream;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Basic abstraction over resource loading.
@@ -37,7 +38,7 @@ public interface ResourceLoader {
      * @param path The path
      * @return An optional resource
      */
-    Optional<InputStream> getResourceAsStream(String path);
+    Optional<InputStream> getResourceAsStream(@RUntainted String path);
 
     /**
      * Obtains the URL to a given resource.
@@ -45,7 +46,7 @@ public interface ResourceLoader {
      * @param path The path
      * @return An optional resource
      */
-    Optional<URL> getResource(String path);
+    Optional<URL> getResource(@RUntainted String path);
 
     /**
      * Obtains all resources with the given name.
@@ -53,7 +54,7 @@ public interface ResourceLoader {
      * @param name The name of the resource
      * @return A stream of URLs
      */
-    Stream<URL> getResources(String name);
+    Stream<URL> getResources(@RUntainted String name);
 
     /**
      * @param path The path to a resource including a prefix
@@ -70,6 +71,6 @@ public interface ResourceLoader {
      * @param basePath The path to load resources
      * @return The new {@link ResourceLoader}
      */
-    ResourceLoader forBase(String basePath);
+    ResourceLoader forBase(@RUntainted String basePath);
 
 }

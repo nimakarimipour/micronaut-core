@@ -24,6 +24,7 @@ import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.*;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Abstract implementation of the {@link ClassWriterOutputVisitor} interface that deals with service descriptors in a
@@ -87,8 +88,8 @@ public abstract class AbstractClassWriterOutputVisitor implements ClassWriterOut
      * @param serviceEntries The service entries
      * @param originatingElements The originating elements
      */
-    public void writeServiceEntries(Map<String, Set<String>> serviceEntries, Element... originatingElements) {
-        for (Map.Entry<String, Set<String>> entry : serviceEntries.entrySet()) {
+    public void writeServiceEntries(Map<String, @RUntainted Set<String>> serviceEntries, Element... originatingElements) {
+        for (Map.Entry<String, @RUntainted Set<String>> entry : serviceEntries.entrySet()) {
             String serviceName = entry.getKey();
             Set<String> serviceTypes = new TreeSet<>(entry.getValue());
 

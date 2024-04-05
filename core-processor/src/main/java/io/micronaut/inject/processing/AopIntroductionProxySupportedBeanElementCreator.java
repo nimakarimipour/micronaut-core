@@ -23,6 +23,7 @@ import io.micronaut.inject.ast.MethodElement;
 import io.micronaut.inject.ast.PropertyElement;
 import io.micronaut.inject.visitor.VisitorContext;
 import io.micronaut.inject.writer.BeanDefinitionVisitor;
+import edu.ucr.cs.riple.taint.ucrtainting.qual.RUntainted;
 
 /**
  * Ordinary bean with AOP introduction.
